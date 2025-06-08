@@ -38,6 +38,9 @@ generations](https://en.wikipedia.org/wiki/Topological_sorting)
 - [x] links to third party services are provided
 - [ ] community detection is applied to identify clusters of related works (upcoming feature)
 
+> [!CAUTION]
+> The graphs of the last publication are knowingly missing, as the project has now reached a size where Github is no longer a suitable solution. We are currently looking for better approaches to display the temporal and spatial data of the graph network and the articles better, faster and more interactively. Stay tuned!
+
 ## Publication
 
 If our database has been helpful to you, please consider citing our work!
