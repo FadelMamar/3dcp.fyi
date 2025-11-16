@@ -1,0 +1,8095 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Comprehensive database of 3D Concrete Printing research">
+      
+      
+        <meta name="author" content="3dcp.fyi Team">
+      
+      
+        <link rel="canonical" href="https://www.3dcp.fyi/papers/2018/07/">
+      
+      
+        <link rel="prev" href="../06/">
+      
+      
+        <link rel="next" href="../08/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>2018-07 - 3DCP.fyi</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.618322db.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#scalable-additive-manufacturing-solution-for-construction-2018-07" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="3DCP.fyi" class="md-header__button md-logo" aria-label="3DCP.fyi" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            3DCP.fyi
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              2018-07
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../2025/" class="md-tabs__link">
+          
+  
+  
+  Papers
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="3DCP.fyi" class="md-nav__button md-logo" aria-label="3DCP.fyi" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    3DCP.fyi
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Papers
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Papers
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Recent Years
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Recent Years
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_1_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1_1" id="__nav_2_1_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2025
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_1_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    2025
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2025/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2025
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2025/01/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2025-01
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2025/02/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2025-02
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2025/03/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2025-03
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2025/04/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2025-04
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2025/05/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2025-05
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2025/06/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2025-06
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2025/07/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2025-07
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_1_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1_2" id="__nav_2_1_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2024
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_1_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    2024
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2024/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2024
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2024/01/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2024-01
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2024/02/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2024-02
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2024/03/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2024-03
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2024/04/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2024-04
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2024/05/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2024-05
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2024/06/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2024-06
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2024/07/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2024-07
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2024/08/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2024-08
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2024/09/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2024-09
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2024/10/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2024-10
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2024/11/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2024-11
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2024/12/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2024-12
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_1_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1_3" id="__nav_2_1_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2023
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_1_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    2023
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2023/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2023
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2023/01/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2023-01
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2023/02/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2023-02
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2023/03/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2023-03
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2023/04/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2023-04
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2023/05/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2023-05
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2023/06/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2023-06
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2023/07/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2023-07
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2023/08/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2023-08
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2023/09/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2023-09
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2023/10/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2023-10
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2023/11/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2023-11
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2023/12/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2023-12
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_1_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1_4" id="__nav_2_1_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2022
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_1_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    2022
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2022/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2022
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2022/01/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2022-01
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2022/02/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2022-02
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2022/03/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2022-03
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2022/04/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2022-04
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2022/05/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2022-05
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2022/06/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2022-06
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2022/07/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2022-07
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2022/08/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2022-08
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2022/09/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2022-09
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2022/10/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2022-10
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2022/11/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2022-11
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2022/12/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2022-12
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_1_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1_5" id="__nav_2_1_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2021
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_1_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    2021
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2021/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2021
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2021/01/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2021-01
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2021/02/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2021-02
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2021/03/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2021-03
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2021/04/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2021-04
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2021/05/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2021-05
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2021/06/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2021-06
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2021/07/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2021-07
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2021/08/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2021-08
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2021/09/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2021-09
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2021/10/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2021-10
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2021/11/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2021-11
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2021/12/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2021-12
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2020
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    2020
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2020/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2020
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2020/01/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2020-01
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2020/02/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2020-02
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2020/03/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2020-03
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2020/04/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2020-04
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2020/05/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2020-05
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2020/06/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2020-06
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2020/07/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2020-07
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2020/08/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2020-08
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2020/09/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2020-09
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2020/10/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2020-10
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2020/11/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2020-11
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2020/12/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2020-12
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2019
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    2019
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2019/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2019
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2019/01/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2019-01
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2019/02/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2019-02
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2019/03/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2019-03
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2019/04/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2019-04
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2019/05/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2019-05
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2019/06/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2019-06
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2019/07/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2019-07
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2019/08/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2019-08
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2019/09/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2019-09
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2019/10/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2019-10
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2019/11/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2019-11
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2019/12/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2019-12
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2018
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    2018
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2018
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2018-01
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2018-02
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2018-03
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2018-04
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2018-05
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2018-06
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2018-07
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2018-07
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#scalable-additive-manufacturing-solution-for-construction-2018-07" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Scalable Additive Manufacturing Solution for Construction (2018-07)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mechanical-properties-of-layered-geopolymer-structures-applicable-in-concrete-3d-printing-2018-07" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mechanical Properties of Layered Geopolymer Structures Applicable in Concrete 3D Printing (2018-07)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3d-printing-concrete-on-temporary-surfaces-the-design-and-fabrication-of-a-concrete-shell-structure-2018-07" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3D Printing Concrete on Temporary Surfaces: The Design and Fabrication of a Concrete Shell Structure (2018-07)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#digital-in-situ-fabrication-challenges-and-opportunities-for-robotic-in-situ-fabrication-in-architecture-construction-and-beyond-2018-07" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Digital In-Situ Fabrication: Challenges and Opportunities for Robotic In-Situ Fabrication in Architecture, Construction, and Beyond (2018-07)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#digitally-fabricated-innovative-concrete-structures-2018-07" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Digitally Fabricated Innovative Concrete Structures (2018-07)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#engineering-properties-influencing-clayey-materials-for-additive-manufacturing-2018-07" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Engineering Properties Influencing Clayey Materials for Additive Manufacturing (2018-07)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#particle-bed-3d-printing-in-concrete-construction-possibilities-and-challenges-2018-07" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Particle-Bed 3D Printing in Concrete Construction: Possibilities and Challenges (2018-07)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#incorporating-reinforcement-into-digital-concrete-construction-2018-07" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Incorporating Reinforcement into Digital Concrete Construction (2018-07)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#graphic-statics-and-their-potential-for-digital-design-and-fabrication-with-concrete-2018-07" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Graphic Statics and Their Potential for Digital Design and Fabrication with Concrete (2018-07)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3d-concrete-printing-of-post-tensioned-elements-2018-07" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3D Concrete Printing of Post-Tensioned Elements (2018-07)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#time-gap-effect-on-bond-strength-of-3d-printed-concrete-2018-07" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Time-Gap-Effect on Bond Strength of 3D Printed Concrete (2018-07)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#volume-forming-3d-concrete-printing-using-a-variable-diameter-square-nozzle-2018-07" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Volume-Forming 3D Concrete Printing Using a Variable-Diameter Square Nozzle (2018-07)
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2018-08
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2018-09
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2018-10
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2018-11
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2018-12
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2017
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    2017
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2017/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2017
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2017/01/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2017-01
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2017/02/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2017-02
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2017/03/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2017-03
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2017/04/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2017-04
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2017/05/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2017-05
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2017/06/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2017-06
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2017/07/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2017-07
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2017/08/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2017-08
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2017/09/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2017-09
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2017/10/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2017-10
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2017/11/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2017-11
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2017/12/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2017-12
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_6" id="__nav_2_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2016
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    2016
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2016/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2016
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2016/03/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2016-03
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2016/04/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2016-04
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2016/05/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2016-05
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2016/06/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2016-06
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2016/07/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2016-07
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2016/08/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2016-08
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2016/09/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2016-09
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2016/10/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2016-10
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2016/11/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2016-11
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2016/12/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2016-12
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_7" id="__nav_2_7_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2015
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    2015
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2015/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2015
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2015/01/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2015-01
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2015/02/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2015-02
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2015/03/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2015-03
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2015/05/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2015-05
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2015/06/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2015-06
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2015/07/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2015-07
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2015/08/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2015-08
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2015/09/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2015-09
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2015/10/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2015-10
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2015/12/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2015-12
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_8" id="__nav_2_8_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Older Years
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Older Years
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_8_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_8_1" id="__nav_2_8_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2014
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_8_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_8_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    2014
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2014/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2014
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2014/03/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2014-03
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2014/04/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2014-04
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2014/05/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2014-05
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2014/09/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2014-09
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2014/10/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2014-10
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2014/11/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2014-11
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2014/12/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2014-12
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_8_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_8_2" id="__nav_2_8_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2013
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_8_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_8_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    2013
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2013/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2013
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2013/01/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2013-01
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2013/05/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2013-05
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2013/06/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2013-06
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2013/07/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2013-07
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2013/08/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2013-08
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2013/09/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2013-09
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2013/11/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2013-11
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2013/12/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2013-12
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_8_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_8_3" id="__nav_2_8_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2012
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_8_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_8_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    2012
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2012/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2012
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2012/01/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2012-01
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2012/04/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2012-04
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2012/06/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2012-06
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2012/09/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2012-09
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2012/10/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2012-10
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2012/12/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2012-12
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_8_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_8_4" id="__nav_2_8_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2011
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_8_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_8_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    2011
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2011/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2011
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2011/07/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2011-07
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2011/10/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2011-10
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_8_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_8_5" id="__nav_2_8_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2009
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_8_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_8_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    2009
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2009/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2009
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2009/04/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2009-04
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2009/06/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2009-06
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2009/09/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2009-09
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2009/10/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2009-10
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_8_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_8_6" id="__nav_2_8_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2008
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_8_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_8_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    2008
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2008/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2008
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2008/05/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2008-05
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_8_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_8_7" id="__nav_2_8_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2007
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_8_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_8_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    2007
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2007/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2007
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2007/02/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2007-02
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2007/04/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2007-04
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_8_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_8_8" id="__nav_2_8_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2006
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_8_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_8_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    2006
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2006/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2006
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2006/05/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2006-05
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2006/06/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2006-06
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_8_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_8_9" id="__nav_2_8_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2005
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_8_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_8_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    2005
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2005/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2005
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2005/01/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2005-01
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2005/10/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2005-10
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2005/11/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2005-11
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_8_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_8_10" id="__nav_2_8_10_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2004
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_8_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_8_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    2004
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2004/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2004
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2004/09/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2004-09
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_8_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_8_11" id="__nav_2_8_11_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2003
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_8_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_8_11">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    2003
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2003/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2003
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2003/11/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2003-11
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_8_12" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_8_12" id="__nav_2_8_12_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2002
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_8_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_8_12">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    2002
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2002/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2002
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2002/09/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2002-09
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_8_13" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_8_13" id="__nav_2_8_13_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2001
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_8_13_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_8_13">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    2001
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2001/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2001
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2001/09/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2001-09
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_8_14" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_8_14" id="__nav_2_8_14_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1998
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_8_14_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_8_14">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    1998
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1998/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1998
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1998/01/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1998-01
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_8_15" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_8_15" id="__nav_2_8_15_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1997
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_8_15_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_8_15">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    1997
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1997/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1997
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1997/02/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1997-02
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#scalable-additive-manufacturing-solution-for-construction-2018-07" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Scalable Additive Manufacturing Solution for Construction (2018-07)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mechanical-properties-of-layered-geopolymer-structures-applicable-in-concrete-3d-printing-2018-07" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mechanical Properties of Layered Geopolymer Structures Applicable in Concrete 3D Printing (2018-07)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3d-printing-concrete-on-temporary-surfaces-the-design-and-fabrication-of-a-concrete-shell-structure-2018-07" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3D Printing Concrete on Temporary Surfaces: The Design and Fabrication of a Concrete Shell Structure (2018-07)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#digital-in-situ-fabrication-challenges-and-opportunities-for-robotic-in-situ-fabrication-in-architecture-construction-and-beyond-2018-07" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Digital In-Situ Fabrication: Challenges and Opportunities for Robotic In-Situ Fabrication in Architecture, Construction, and Beyond (2018-07)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#digitally-fabricated-innovative-concrete-structures-2018-07" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Digitally Fabricated Innovative Concrete Structures (2018-07)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#engineering-properties-influencing-clayey-materials-for-additive-manufacturing-2018-07" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Engineering Properties Influencing Clayey Materials for Additive Manufacturing (2018-07)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#particle-bed-3d-printing-in-concrete-construction-possibilities-and-challenges-2018-07" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Particle-Bed 3D Printing in Concrete Construction: Possibilities and Challenges (2018-07)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#incorporating-reinforcement-into-digital-concrete-construction-2018-07" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Incorporating Reinforcement into Digital Concrete Construction (2018-07)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#graphic-statics-and-their-potential-for-digital-design-and-fabrication-with-concrete-2018-07" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Graphic Statics and Their Potential for Digital Design and Fabrication with Concrete (2018-07)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3d-concrete-printing-of-post-tensioned-elements-2018-07" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3D Concrete Printing of Post-Tensioned Elements (2018-07)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#time-gap-effect-on-bond-strength-of-3d-printed-concrete-2018-07" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Time-Gap-Effect on Bond Strength of 3D Printed Concrete (2018-07)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#volume-forming-3d-concrete-printing-using-a-variable-diameter-square-nozzle-2018-07" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Volume-Forming 3D Concrete Printing Using a Variable-Diameter Square Nozzle (2018-07)
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>2018-07</h1>
+
+<p><a id="albaswasghaf2018SAMSfC"></a></p>
+<h3 id="scalable-additive-manufacturing-solution-for-construction-2018-07"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/closedaccess.svg"><img src="../../dat/md/ico/wm/closedaccess.svg" width="16" height="16"></picture> <a href="https://github.com/dan-auer/3dcp.fyi/blob/main/dat/3dcp.fyi.bib#L1733-L1742" title="Get the BibTeX Entry"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/bibtex.svg"><img src="../../dat/md/ico/wm/bibtex.svg" width="16" height="16"></picture></a> <a href="https://doi.org/None" title="DOI" ><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/doi.svg" ><img src="../../dat/md/ico/wm/doi.svg" width="16" height="16"></picture></a> <a href="https://crossmark.crossref.org/dialog/?doi=None&domain=pdf" title="Crossmark" ><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/crossmark.svg" ><img src="../../dat/md/ico/wm/crossmark.svg" width="16" height="16"></picture></a> <picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/blank.svg"><img src="../../dat/md/ico/wm/blank.svg" width="16" height="16"></picture> Scalable Additive Manufacturing Solution for Construction (2018-07)</h3>
+<p><a href="https://orcid.org/0000-0001-6147-2448">Abdulrahman <b>Albar</b> <picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/orcid.svg" ><img src="../../dat/md/ico/wm/orcid.svg" width="16" height="16"></picture></a>,
+Mohammad <b>Swash</b>,
+<a href="https://orcid.org/0000-0002-4694-9508">Seyed <b>Ghaffar</b> <picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/orcid.svg" ><img src="../../dat/md/ico/wm/orcid.svg" width="16" height="16"></picture></a><br>Contribution – Proceedings of the 6th International Conference on Nanomanufacturing</p>
+<details><summary>Abstract</summary>Additive manufacturing (AM), popularly known as ‘3D printing’, is a manufacturing technique that builds physical 3D objects layer by layer using materials such as polymers, metals, and cementitious composites. The widespread popularity of additive manufacturing in most industries ranging from biomedical to aerospace suggests a revolution in manufacturing which have recently emerged to the construction sector. Considered as the future of construction, AM is used in 3D concrete printing due to its benefits in reducing the waste and contributing towards circular economy goals through the use of recovered waste materials from demolition sites. This paper proposes a scalable additive manufacturing system for the construction sector which pursues an eco-innovative approach to reduce cost and time while increasing quality and versatility in building a 3D structure. The proposed solution involves designing and developing two subsystems that form a robotic AM platform. These two systems consist of a positioning system where a robotic arm is implemented in addition to a nozzle system for extrusion the concrete with precision, which enables the achievement of complex geometries.</details>
+<p><a href="https://scholar.google.com/scholar_lookup?title=Scalable%20Additive%20Manufacturing%20Solution%20for%20Construction" title="Search on Google Scholar"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/googlescholar.svg" ><img src="../../dat/md/ico/wm/googlescholar.svg" width="16" height="16"></picture></a>
+<picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/blank.svg"><img src="../../dat/md/ico/wm/blank.svg" width="16" height="16"></picture><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/blank.svg"><img src="../../dat/md/ico/wm/blank.svg" width="16" height="16"></picture><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/blank.svg"><img src="../../dat/md/ico/wm/blank.svg" width="16" height="16"></picture><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/blank.svg"><img src="../../dat/md/ico/wm/blank.svg" width="16" height="16"></picture><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/blank.svg"><img src="../../dat/md/ico/wm/blank.svg" width="16" height="16"></picture><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/blank.svg"><img src="../../dat/md/ico/wm/blank.svg" width="16" height="16"></picture><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/blank.svg"><img src="../../dat/md/ico/wm/blank.svg" width="16" height="16"></picture><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/blank.svg"><img src="../../dat/md/ico/wm/blank.svg" width="16" height="16"></picture><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/blank.svg"><img src="../../dat/md/ico/wm/blank.svg" width="16" height="16"></picture><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/blank.svg"><img src="../../dat/md/ico/wm/blank.svg" width="16" height="16"></picture><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/blank.svg"><img src="../../dat/md/ico/wm/blank.svg" width="16" height="16"></picture><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/blank.svg"><img src="../../dat/md/ico/wm/blank.svg" width="16" height="16"></picture><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/blank.svg"><img src="../../dat/md/ico/wm/blank.svg" width="16" height="16"></picture></p>
+<hr />
+<p><a id="alqnazabagh2018MPoLGSAiC3P"></a></p>
+<h3 id="mechanical-properties-of-layered-geopolymer-structures-applicable-in-concrete-3d-printing-2018-07"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/closedaccess.svg"><img src="../../dat/md/ico/wm/closedaccess.svg" width="16" height="16"></picture> <a href="https://github.com/dan-auer/3dcp.fyi/blob/main/dat/3dcp.fyi.bib#L2129-L2141" title="Get the BibTeX Entry"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/bibtex.svg"><img src="../../dat/md/ico/wm/bibtex.svg" width="16" height="16"></picture></a> <a href="https://doi.org/10.1016/j.conbuildmat.2018.04.195" title="DOI" ><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/doi.svg" ><img src="../../dat/md/ico/wm/doi.svg" width="16" height="16"></picture></a> <a href="https://crossmark.crossref.org/dialog/?doi=10.1016/j.conbuildmat.2018.04.195&domain=pdf" title="Crossmark" ><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/crossmark.svg" ><img src="../../dat/md/ico/wm/crossmark.svg" width="16" height="16"></picture></a> <picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/blank.svg"><img src="../../dat/md/ico/wm/blank.svg" width="16" height="16"></picture> Mechanical Properties of Layered Geopolymer Structures Applicable in Concrete 3D Printing (2018-07)</h3>
+<p>Sarah <b>Al-Qutaifi</b>,
+<a href="https://orcid.org/0000-0001-9461-3753">Ali <b>Nazari</b> <picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/orcid.svg" ><img src="../../dat/md/ico/wm/orcid.svg" width="16" height="16"></picture></a>,
+<a href="https://orcid.org/0000-0002-0151-202X">Ali <b>Bagheri</b> <picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/orcid.svg" ><img src="../../dat/md/ico/wm/orcid.svg" width="16" height="16"></picture></a><br>Journal Article – Construction and Building Materials, Vol. 176, pp. 690-699</p>
+<details><summary>Abstract</summary>This paper focuses on inspecting the structural buildability of layered objects. Simulating extrusion method process was used to investigate three geopolymer mixes, three-time gaps, and two layering patterns through 18 layered samples. This paper also evaluates effects of the layering process on hardened properties of build-up materials through 9 standard specimens. The used materials were Gladstone fly ash, sand, 8 M sodium hydroxide solution, and D-grade sodium silicate. The weight ratio of sodium silicate to sodium hydroxide was 1, and activators to fly ash was 0.26. Mix 1, mix 2, and mix 3 contained 0%, 1% steel fibers, and 0.5% polypropylene fibers respectively. The structural buildability of layered samples and the influence of the layering process were assessed in terms of flexural strength through 3-point bending tests. Flexural strength results indicated that the layering process has negative impact on the mechanical strength of build-up materials. Also, mix 2 resulted in the highest flexural strength values in standard specimens and layered samples. However, the most bond separation issues between additive layers were achieved with layered samples produced with mix 2. Most layered samples produced with minimum time gaps recorded the highest flexural strength results.</details>
+<details><summary>Metrics</summary><img src="../../dat/md/fig/alq_naza_bagh.2018.MPoLGSAiC3P.svg"></details>
+<p><a href="https://scholar.google.com/scholar_lookup?title=Mechanical%20Properties%20of%20Layered%20Geopolymer%20Structures%20Applicable%20in%20Concrete%203D%20Printing" title="Search on Google Scholar"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/googlescholar.svg" ><img src="../../dat/md/ico/wm/googlescholar.svg" width="16" height="16"></picture></a>
+<a href="https://www.webofscience.com/wos/woscc/full-record/WOS:000435620000068" title="Search on Web of Science"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/wos.svg" ><img src="../../dat/md/ico/wm/wos.svg" width="16" height="16"></picture></a>
+<a href="http://www.scopus.com/record/display.url?eid=2-s2.0-85047085798&origin=resultslist" title="Search on Scopus"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/scopus.svg" ><img src="../../dat/md/ico/wm/scopus.svg" width="16" height="16"></picture></a>
+<picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/blank.svg"><img src="../../dat/md/ico/wm/blank.svg" width="16" height="16"></picture><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/blank.svg"><img src="../../dat/md/ico/wm/blank.svg" width="16" height="16"></picture><a href="https://plu.mx/plum/a/?doi=10.1016/j.conbuildmat.2018.04.195" title="Search on plu.mx"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/plumx.svg" ><img src="../../dat/md/ico/wm/plumx.svg" width="16" height="16"></picture></a>
+<picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/blank.svg"><img src="../../dat/md/ico/wm/blank.svg" width="16" height="16"></picture><a href="https://api.crossref.org/works/10.1016/j.conbuildmat.2018.04.195" title="Search on Crossref"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/crossref.svg" ><img src="../../dat/md/ico/wm/crossref.svg" width="16" height="16"></picture></a>
+<a href="https://api.openalex.org/works/doi:10.1016/j.conbuildmat.2018.04.195" title="Search on OpenAlex"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/openalex.svg" ><img src="../../dat/md/ico/wm/openalex.svg" width="16" height="16"></picture></a>
+<picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/blank.svg"><img src="../../dat/md/ico/wm/blank.svg" width="16" height="16"></picture><a href="https://api.semanticscholar.org/graph/v1/paper/10.1016/j.conbuildmat.2018.04.195" title="Search on Semantic Scholar"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/semanticscholar.svg" ><img src="../../dat/md/ico/wm/semanticscholar.svg" width="16" height="16"></picture></a>
+<a href="https://opencitations.net/meta/api/v1/metadata/doi:10.1016/j.conbuildmat.2018.04.195" title="Search on Open Citations"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/opencitations.svg" ><img src="../../dat/md/ico/wm/opencitations.svg" width="16" height="16"></picture></a>
+<a href="https://www.researchgate.net/search.Search.html?query=10.1016/j.conbuildmat.2018.04.195&type=publication&type=publication" title="Search on Researchgate"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/researchgate.svg" ><img src="../../dat/md/ico/wm/researchgate.svg" width="16" height="16"></picture></a>
+<a href="https://scite.ai/reports/mechanical-properties-of-layered-geopolymer-r6v23LQ" title="Search on Scite" ><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/scite.svg"><img src="../../dat/md/ico/wm/scite.svg" width="16" height="16"></picture></a>
+<a href="https://inciteful.xyz/p/W2803548657" title="Search on Inciteful"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/connectedpapers.svg" ><img src="../../dat/md/ico/wm/connectedpapers.svg" width="16" height="16"></picture></a></p>
+<hr />
+<p><a id="borgahmeschibos20183PCoTS"></a></p>
+<h3 id="3d-printing-concrete-on-temporary-surfaces-the-design-and-fabrication-of-a-concrete-shell-structure-2018-07"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/openaccess.svg"><img src="../../dat/md/ico/wm/openaccess.svg" width="16" height="16"></picture> <a href="https://github.com/dan-auer/3dcp.fyi/blob/main/dat/3dcp.fyi.bib#L6770-L6782" title="Get the BibTeX Entry"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/bibtex.svg"><img src="../../dat/md/ico/wm/bibtex.svg" width="16" height="16"></picture></a> <a href="https://doi.org/10.1016/j.autcon.2018.06.013" title="DOI" ><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/doi.svg" ><img src="../../dat/md/ico/wm/doi.svg" width="16" height="16"></picture></a> <a href="https://crossmark.crossref.org/dialog/?doi=10.1016/j.autcon.2018.06.013&domain=pdf" title="Crossmark" ><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/crossmark.svg" ><img src="../../dat/md/ico/wm/crossmark.svg" width="16" height="16"></picture></a> <a href="https://pure.tue.nl/ws/files/102381833/1_s2.0_S0926580517306556_main.pdf" title="Get the *.pdf via unpaywall.com" ><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/down.svg" ><img src="../../dat/md/ico/wm/down.svg" width="16" height="16"></picture></a> 3D Printing Concrete on Temporary Surfaces: The Design and Fabrication of a Concrete Shell Structure (2018-07)</h3>
+<p><a href="https://orcid.org/0000-0002-8671-0139">Christopher <b>Borg Costanzi</b> <picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/orcid.svg" ><img src="../../dat/md/ico/wm/orcid.svg" width="16" height="16"></picture></a>,
+<a href="https://orcid.org/0000-0001-7250-9752">Zeeshan <b>Ahmed</b> <picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/orcid.svg" ><img src="../../dat/md/ico/wm/orcid.svg" width="16" height="16"></picture></a>,
+<a href="https://orcid.org/0000-0003-0549-4516">Roel <b>Schipper</b> <picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/orcid.svg" ><img src="../../dat/md/ico/wm/orcid.svg" width="16" height="16"></picture></a>,
+<a href="https://orcid.org/0000-0002-6666-2395">Freek <b>Bos</b> <picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/orcid.svg" ><img src="../../dat/md/ico/wm/orcid.svg" width="16" height="16"></picture></a>,
+<a href="https://orcid.org/0000-0001-9998-6428">Ulrich <b>Knaack</b> <picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/orcid.svg" ><img src="../../dat/md/ico/wm/orcid.svg" width="16" height="16"></picture></a>,
+<a href="https://orcid.org/0000-0001-7897-433X">Robert <b>Wolfs</b> <picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/orcid.svg" ><img src="../../dat/md/ico/wm/orcid.svg" width="16" height="16"></picture></a><br>Journal Article – Automation in Construction, Vol. 94, pp. 395-404</p>
+<details><summary>Abstract</summary>One of the geometrical restrictions associated with printed paste materials such as concrete, is that material must be self-supporting during printing. In this research paper a new methodology for 3D Printing Concrete onto a temporary freeform surface is presented. This is achieved by setting up a workflow for combining a Flexible Mould developed at TU Delft with a 4-degrees-of-freedom gantry printer (4 DOF) provided at TU Eindhoven. A number of hypothetical cases are studied, namely fully-printing geometries or combining 3D printing with casting concrete. The final outcome is a 5m2 partially-printed and partially-cast shell structure, combined with a CNC-milled mould simulating a Flexible Mould.</details>
+<details><summary>Metrics</summary><img src="../../dat/md/fig/borg_ahme_schi_bos.2018.3PCoTS.svg"></details>
+<p><a href="https://scholar.google.com/scholar_lookup?title=3D%20Printing%20Concrete%20on%20Temporary%20Surfaces" title="Search on Google Scholar"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/googlescholar.svg" ><img src="../../dat/md/ico/wm/googlescholar.svg" width="16" height="16"></picture></a>
+<a href="https://www.webofscience.com/wos/woscc/full-record/WOS:000443663900032" title="Search on Web of Science"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/wos.svg" ><img src="../../dat/md/ico/wm/wos.svg" width="16" height="16"></picture></a>
+<a href="http://www.scopus.com/record/display.url?eid=2-s2.0-85050391912&origin=resultslist" title="Search on Scopus"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/scopus.svg" ><img src="../../dat/md/ico/wm/scopus.svg" width="16" height="16"></picture></a>
+<picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/blank.svg"><img src="../../dat/md/ico/wm/blank.svg" width="16" height="16"></picture><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/blank.svg"><img src="../../dat/md/ico/wm/blank.svg" width="16" height="16"></picture><a href="https://plu.mx/plum/a/?doi=10.1016/j.autcon.2018.06.013" title="Search on plu.mx"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/plumx.svg" ><img src="../../dat/md/ico/wm/plumx.svg" width="16" height="16"></picture></a>
+<picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/blank.svg"><img src="../../dat/md/ico/wm/blank.svg" width="16" height="16"></picture><a href="https://api.crossref.org/works/10.1016/j.autcon.2018.06.013" title="Search on Crossref"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/crossref.svg" ><img src="../../dat/md/ico/wm/crossref.svg" width="16" height="16"></picture></a>
+<a href="https://api.openalex.org/works/doi:10.1016/j.autcon.2018.06.013" title="Search on OpenAlex"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/openalex.svg" ><img src="../../dat/md/ico/wm/openalex.svg" width="16" height="16"></picture></a>
+<picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/blank.svg"><img src="../../dat/md/ico/wm/blank.svg" width="16" height="16"></picture><a href="https://api.semanticscholar.org/graph/v1/paper/10.1016/j.autcon.2018.06.013" title="Search on Semantic Scholar"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/semanticscholar.svg" ><img src="../../dat/md/ico/wm/semanticscholar.svg" width="16" height="16"></picture></a>
+<a href="https://opencitations.net/meta/api/v1/metadata/doi:10.1016/j.autcon.2018.06.013" title="Search on Open Citations"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/opencitations.svg" ><img src="../../dat/md/ico/wm/opencitations.svg" width="16" height="16"></picture></a>
+<a href="https://www.researchgate.net/search.Search.html?query=10.1016/j.autcon.2018.06.013&type=publication&type=publication" title="Search on Researchgate"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/researchgate.svg" ><img src="../../dat/md/ico/wm/researchgate.svg" width="16" height="16"></picture></a>
+<a href="https://scite.ai/reports/3d-printing-concrete-on-temporary-ejgnR86" title="Search on Scite" ><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/scite.svg"><img src="../../dat/md/ico/wm/scite.svg" width="16" height="16"></picture></a>
+<a href="https://inciteful.xyz/p/W2884582327" title="Search on Inciteful"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/connectedpapers.svg" ><img src="../../dat/md/ico/wm/connectedpapers.svg" width="16" height="16"></picture></a></p>
+<hr />
+<p><a id="buchgiftkumaluss2018DISF"></a></p>
+<h3 id="digital-in-situ-fabrication-challenges-and-opportunities-for-robotic-in-situ-fabrication-in-architecture-construction-and-beyond-2018-07"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/closedaccess.svg"><img src="../../dat/md/ico/wm/closedaccess.svg" width="16" height="16"></picture> <a href="https://github.com/dan-auer/3dcp.fyi/blob/main/dat/3dcp.fyi.bib#L7473-L7485" title="Get the BibTeX Entry"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/bibtex.svg"><img src="../../dat/md/ico/wm/bibtex.svg" width="16" height="16"></picture></a> <a href="https://doi.org/10.1016/j.cemconres.2018.05.013" title="DOI" ><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/doi.svg" ><img src="../../dat/md/ico/wm/doi.svg" width="16" height="16"></picture></a> <a href="https://crossmark.crossref.org/dialog/?doi=10.1016/j.cemconres.2018.05.013&domain=pdf" title="Crossmark" ><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/crossmark.svg" ><img src="../../dat/md/ico/wm/crossmark.svg" width="16" height="16"></picture></a> <picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/blank.svg"><img src="../../dat/md/ico/wm/blank.svg" width="16" height="16"></picture> Digital In-Situ Fabrication: Challenges and Opportunities for Robotic In-Situ Fabrication in Architecture, Construction, and Beyond (2018-07)</h3>
+<p><a href="https://orcid.org/0000-0001-7494-8492">Jonas <b>Buchli</b> <picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/orcid.svg" ><img src="../../dat/md/ico/wm/orcid.svg" width="16" height="16"></picture></a>,
+<a href="https://orcid.org/0000-0002-1839-9449">Markus <b>Giftthaler</b> <picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/orcid.svg" ><img src="../../dat/md/ico/wm/orcid.svg" width="16" height="16"></picture></a>,
+<a href="https://orcid.org/0000-0002-6854-3496">Nitish <b>Kumar</b> <picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/orcid.svg" ><img src="../../dat/md/ico/wm/orcid.svg" width="16" height="16"></picture></a>,
+Manuel <b>Lussi</b>,
+<a href="https://orcid.org/0000-0002-6777-0857">Timothy <b>Sandy</b> <picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/orcid.svg" ><img src="../../dat/md/ico/wm/orcid.svg" width="16" height="16"></picture></a>,
+<a href="https://orcid.org/0000-0001-6557-5604">Kathrin <b>Dörfler</b> <picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/orcid.svg" ><img src="../../dat/md/ico/wm/orcid.svg" width="16" height="16"></picture></a>,
+<a href="https://orcid.org/0000-0002-5261-6726">Norman <b>Hack</b> <picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/orcid.svg" ><img src="../../dat/md/ico/wm/orcid.svg" width="16" height="16"></picture></a><br>Journal Article – Cement and Concrete Research, Vol. 112, pp. 66-75</p>
+<details><summary>Abstract</summary>While a consensus exists that advanced digital and mechatronic technology is on the cusp of profoundly impacting virtually every manufacturing and industry sector, there are some industries that seem to have profited far less from this ongoing ‘revolution’. One prominent example of this is the construction sector and, in particular, building construction. In this paper, we aim at discussing some of the reasons for this apparent lack, and some reasons why this might change in the near future. We introduce the problem of digital in situ fabrication as both a significant challenge and a huge opportunity. We support the discussion with an example of a robotically-fabricated digital concrete wall. Overall, we find that solving in situ fabrication constitutes an inherently multidisciplinary challenge.</details>
+<details><summary>Metrics</summary><img src="../../dat/md/fig/buch_gift_kuma_luss.2018.DISF.svg"></details>
+<p><a href="https://scholar.google.com/scholar_lookup?title=Digital%20In-Situ%20Fabrication" title="Search on Google Scholar"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/googlescholar.svg" ><img src="../../dat/md/ico/wm/googlescholar.svg" width="16" height="16"></picture></a>
+<a href="https://www.webofscience.com/wos/woscc/full-record/WOS:000444357300006" title="Search on Web of Science"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/wos.svg" ><img src="../../dat/md/ico/wm/wos.svg" width="16" height="16"></picture></a>
+<a href="http://www.scopus.com/record/display.url?eid=2-s2.0-85049806667&origin=resultslist" title="Search on Scopus"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/scopus.svg" ><img src="../../dat/md/ico/wm/scopus.svg" width="16" height="16"></picture></a>
+<picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/blank.svg"><img src="../../dat/md/ico/wm/blank.svg" width="16" height="16"></picture><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/blank.svg"><img src="../../dat/md/ico/wm/blank.svg" width="16" height="16"></picture><a href="https://plu.mx/plum/a/?doi=10.1016/j.cemconres.2018.05.013" title="Search on plu.mx"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/plumx.svg" ><img src="../../dat/md/ico/wm/plumx.svg" width="16" height="16"></picture></a>
+<picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/blank.svg"><img src="../../dat/md/ico/wm/blank.svg" width="16" height="16"></picture><a href="https://api.crossref.org/works/10.1016/j.cemconres.2018.05.013" title="Search on Crossref"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/crossref.svg" ><img src="../../dat/md/ico/wm/crossref.svg" width="16" height="16"></picture></a>
+<a href="https://api.openalex.org/works/doi:10.1016/j.cemconres.2018.05.013" title="Search on OpenAlex"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/openalex.svg" ><img src="../../dat/md/ico/wm/openalex.svg" width="16" height="16"></picture></a>
+<picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/blank.svg"><img src="../../dat/md/ico/wm/blank.svg" width="16" height="16"></picture><a href="https://api.semanticscholar.org/graph/v1/paper/10.1016/j.cemconres.2018.05.013" title="Search on Semantic Scholar"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/semanticscholar.svg" ><img src="../../dat/md/ico/wm/semanticscholar.svg" width="16" height="16"></picture></a>
+<a href="https://opencitations.net/meta/api/v1/metadata/doi:10.1016/j.cemconres.2018.05.013" title="Search on Open Citations"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/opencitations.svg" ><img src="../../dat/md/ico/wm/opencitations.svg" width="16" height="16"></picture></a>
+<a href="https://www.researchgate.net/search.Search.html?query=10.1016/j.cemconres.2018.05.013&type=publication&type=publication" title="Search on Researchgate"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/researchgate.svg" ><img src="../../dat/md/ico/wm/researchgate.svg" width="16" height="16"></picture></a>
+<a href="https://scite.ai/reports/digital-in-situ-fabrication-xXb1Qlg" title="Search on Scite" ><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/scite.svg"><img src="../../dat/md/ico/wm/scite.svg" width="16" height="16"></picture></a>
+<a href="https://inciteful.xyz/p/W2884283402" title="Search on Inciteful"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/connectedpapers.svg" ><img src="../../dat/md/ico/wm/connectedpapers.svg" width="16" height="16"></picture></a></p>
+<hr />
+<p><a id="herrmainlindwirt2018DFICS"></a></p>
+<h3 id="digitally-fabricated-innovative-concrete-structures-2018-07"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/closedaccess.svg"><img src="../../dat/md/ico/wm/closedaccess.svg" width="16" height="16"></picture> <a href="https://github.com/dan-auer/3dcp.fyi/blob/main/dat/3dcp.fyi.bib#L20473-L20485" title="Get the BibTeX Entry"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/bibtex.svg"><img src="../../dat/md/ico/wm/bibtex.svg" width="16" height="16"></picture></a> <a href="https://doi.org/10.22260/isarc2018/0077" title="DOI" ><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/doi.svg" ><img src="../../dat/md/ico/wm/doi.svg" width="16" height="16"></picture></a> <a href="https://crossmark.crossref.org/dialog/?doi=10.22260/isarc2018/0077&domain=pdf" title="Crossmark" ><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/crossmark.svg" ><img src="../../dat/md/ico/wm/crossmark.svg" width="16" height="16"></picture></a> <picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/blank.svg"><img src="../../dat/md/ico/wm/blank.svg" width="16" height="16"></picture> Digitally Fabricated Innovative Concrete Structures (2018-07)</h3>
+<p>Eric <b>Herrmann</b>,
+<a href="https://orcid.org/0000-0002-8941-5661">Jeldrik <b>Mainka</b> <picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/orcid.svg" ><img src="../../dat/md/ico/wm/orcid.svg" width="16" height="16"></picture></a>,
+Hendrik <b>Lindemann</b>,
+Franz <b>Wirth</b>,
+<a href="https://orcid.org/0000-0003-4891-869X">Harald <b>Kloft</b> <picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/orcid.svg" ><img src="../../dat/md/ico/wm/orcid.svg" width="16" height="16"></picture></a><br>Contribution – Proceedings of the 35th International Symposium on Automation and Robotics in Construction</p>
+<details><summary>Abstract</summary>This paper presents the general aim of the research at the Institute of Structural Design (ITE) at Braunschweig University of Technology to bring digital design and digital fabrication together to develop resource efficient construction elements, manufacturing processes and building systems. Basis of research at ITE is the so-called Digital Building Fabrication Laboratory (DBFL). The paper gives an overview of machine design, the technical parameters and its basic abilities of subtractive and additive processes e.g. milling, printing and scanning. Based on the combined use of these digital fabrication processes and in cooperation with highperformance materials such as ultra-high performance concrete (UHPC), different research projects are being performed at the ITE. To explain the possibilities of the DBFL, the paper will present the results of two different – additive and subtractive - research projects to develop fabrication techniques for the building industry. The first project is dealing with the development of “digitally fabricated high precision Non-Waste-Wax-Formwork for innovative UHPC structures” and the second project is investigating “Additive manufacturing of free-form concrete elements using Shotcrete 3D Printing (SC3DP) technology”. Finally, the paper will highlight the possibilities of combining these technologies and transferring them to industry 4.0.</details>
+<details><summary>Metrics</summary><img src="../../dat/md/fig/herr_main_lind_wirt.2018.DFICS.svg"></details>
+<p><a href="https://scholar.google.com/scholar_lookup?title=Digitally%20Fabricated%20Innovative%20Concrete%20Structures" title="Search on Google Scholar"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/googlescholar.svg" ><img src="../../dat/md/ico/wm/googlescholar.svg" width="16" height="16"></picture></a>
+<picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/blank.svg"><img src="../../dat/md/ico/wm/blank.svg" width="16" height="16"></picture><a href="http://www.scopus.com/record/display.url?eid=2-s2.0-85085851575&origin=resultslist" title="Search on Scopus"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/scopus.svg" ><img src="../../dat/md/ico/wm/scopus.svg" width="16" height="16"></picture></a>
+<picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/blank.svg"><img src="../../dat/md/ico/wm/blank.svg" width="16" height="16"></picture><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/blank.svg"><img src="../../dat/md/ico/wm/blank.svg" width="16" height="16"></picture><a href="https://plu.mx/plum/a/?doi=10.22260/isarc2018/0077" title="Search on plu.mx"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/plumx.svg" ><img src="../../dat/md/ico/wm/plumx.svg" width="16" height="16"></picture></a>
+<picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/blank.svg"><img src="../../dat/md/ico/wm/blank.svg" width="16" height="16"></picture><a href="https://api.crossref.org/works/10.22260/isarc2018/0077" title="Search on Crossref"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/crossref.svg" ><img src="../../dat/md/ico/wm/crossref.svg" width="16" height="16"></picture></a>
+<a href="https://api.openalex.org/works/doi:10.22260/isarc2018/0077" title="Search on OpenAlex"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/openalex.svg" ><img src="../../dat/md/ico/wm/openalex.svg" width="16" height="16"></picture></a>
+<picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/blank.svg"><img src="../../dat/md/ico/wm/blank.svg" width="16" height="16"></picture><a href="https://api.semanticscholar.org/graph/v1/paper/10.22260/isarc2018/0077" title="Search on Semantic Scholar"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/semanticscholar.svg" ><img src="../../dat/md/ico/wm/semanticscholar.svg" width="16" height="16"></picture></a>
+<a href="https://opencitations.net/meta/api/v1/metadata/doi:10.22260/isarc2018/0077" title="Search on Open Citations"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/opencitations.svg" ><img src="../../dat/md/ico/wm/opencitations.svg" width="16" height="16"></picture></a>
+<a href="https://www.researchgate.net/search.Search.html?query=10.22260/isarc2018/0077&type=publication&type=publication" title="Search on Researchgate"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/researchgate.svg" ><img src="../../dat/md/ico/wm/researchgate.svg" width="16" height="16"></picture></a>
+<a href="https://scite.ai/reports/digitally-fabricated-innovative-concrete-structures-K6YnZ25" title="Search on Scite" ><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/scite.svg"><img src="../../dat/md/ico/wm/scite.svg" width="16" height="16"></picture></a>
+<a href="https://inciteful.xyz/p/W2882977640" title="Search on Inciteful"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/connectedpapers.svg" ><img src="../../dat/md/ico/wm/connectedpapers.svg" width="16" height="16"></picture></a></p>
+<hr />
+<p><a id="hillliuliusanc2018EPICMfAM"></a></p>
+<h3 id="engineering-properties-influencing-clayey-materials-for-additive-manufacturing-2018-07"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/closedaccess.svg"><img src="../../dat/md/ico/wm/closedaccess.svg" width="16" height="16"></picture> <a href="https://github.com/dan-auer/3dcp.fyi/blob/main/dat/3dcp.fyi.bib#L20587-L20595" title="Get the BibTeX Entry"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/bibtex.svg"><img src="../../dat/md/ico/wm/bibtex.svg" width="16" height="16"></picture></a> <a href="https://doi.org/None" title="DOI" ><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/doi.svg" ><img src="../../dat/md/ico/wm/doi.svg" width="16" height="16"></picture></a> <a href="https://crossmark.crossref.org/dialog/?doi=None&domain=pdf" title="Crossmark" ><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/crossmark.svg" ><img src="../../dat/md/ico/wm/crossmark.svg" width="16" height="16"></picture></a> <picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/blank.svg"><img src="../../dat/md/ico/wm/blank.svg" width="16" height="16"></picture> Engineering Properties Influencing Clayey Materials for Additive Manufacturing (2018-07)</h3>
+<p>James <b>Hillegas</b>,
+Rui <b>Liu</b>,
+<a href="https://orcid.org/0000-0001-7288-9230">Bosheng <b>Liu</b> <picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/orcid.svg" ><img src="../../dat/md/ico/wm/orcid.svg" width="16" height="16"></picture></a>,
+Alex <b>Sanchez</b>,
+Qidan <b>Huang</b><br>Contribution – Proceedings of the IASS 2018 Annual Symposium</p>
+<details><summary>Abstract</summary>The objective of the study is to further define the engineering properties of clayey materials that influence performance when used in additive manufacturing. Limited existing literature explored the workability, extrudability and buildability of these material mixes to determine the acceptable ranges to be 3D-printed. This study was designed to deepen the understanding of fresh properties of clayey materials. Also, this work differs in that sustainable materials were used including clay and dredged material from the Maumee River in Toledo, Ohio. Plus, no chemical admixtures were used as found in many other studies. Extrudability, buildability, and workability tests were performed on the clay, and dredged material at varying water to binder ratios. Due to the printer build volume, slight alterations were conducted for buildability and extrudability testing. Also, due to the low shear strength of materials, a shear vane device was modified for workability testing. Printing with sustainable materials, like dredged material, can significantly reduce the construction cost. General construction will benefit from controlled printing of cementitious materials with no longer a requirement for form work, which is 60-75% of the cost. The research concluded with the fabrication of panels to create shell structures using the mixtures with optimal performances in these tests.</details>
+<p><a href="https://scholar.google.com/scholar_lookup?title=Engineering%20Properties%20Influencing%20Clayey%20Materials%20for%20Additive%20Manufacturing" title="Search on Google Scholar"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/googlescholar.svg" ><img src="../../dat/md/ico/wm/googlescholar.svg" width="16" height="16"></picture></a>
+<picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/blank.svg"><img src="../../dat/md/ico/wm/blank.svg" width="16" height="16"></picture><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/blank.svg"><img src="../../dat/md/ico/wm/blank.svg" width="16" height="16"></picture><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/blank.svg"><img src="../../dat/md/ico/wm/blank.svg" width="16" height="16"></picture><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/blank.svg"><img src="../../dat/md/ico/wm/blank.svg" width="16" height="16"></picture><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/blank.svg"><img src="../../dat/md/ico/wm/blank.svg" width="16" height="16"></picture><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/blank.svg"><img src="../../dat/md/ico/wm/blank.svg" width="16" height="16"></picture><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/blank.svg"><img src="../../dat/md/ico/wm/blank.svg" width="16" height="16"></picture><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/blank.svg"><img src="../../dat/md/ico/wm/blank.svg" width="16" height="16"></picture><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/blank.svg"><img src="../../dat/md/ico/wm/blank.svg" width="16" height="16"></picture><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/blank.svg"><img src="../../dat/md/ico/wm/blank.svg" width="16" height="16"></picture><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/blank.svg"><img src="../../dat/md/ico/wm/blank.svg" width="16" height="16"></picture><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/blank.svg"><img src="../../dat/md/ico/wm/blank.svg" width="16" height="16"></picture><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/blank.svg"><img src="../../dat/md/ico/wm/blank.svg" width="16" height="16"></picture></p>
+<hr />
+<p><a id="lowkdiniperrwege2018PB3PiCC"></a></p>
+<h3 id="particle-bed-3d-printing-in-concrete-construction-possibilities-and-challenges-2018-07"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/closedaccess.svg"><img src="../../dat/md/ico/wm/closedaccess.svg" width="16" height="16"></picture> <a href="https://github.com/dan-auer/3dcp.fyi/blob/main/dat/3dcp.fyi.bib#L32129-L32141" title="Get the BibTeX Entry"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/bibtex.svg"><img src="../../dat/md/ico/wm/bibtex.svg" width="16" height="16"></picture></a> <a href="https://doi.org/10.1016/j.cemconres.2018.05.018" title="DOI" ><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/doi.svg" ><img src="../../dat/md/ico/wm/doi.svg" width="16" height="16"></picture></a> <a href="https://crossmark.crossref.org/dialog/?doi=10.1016/j.cemconres.2018.05.018&domain=pdf" title="Crossmark" ><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/crossmark.svg" ><img src="../../dat/md/ico/wm/crossmark.svg" width="16" height="16"></picture></a> <picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/blank.svg"><img src="../../dat/md/ico/wm/blank.svg" width="16" height="16"></picture> Particle-Bed 3D Printing in Concrete Construction: Possibilities and Challenges (2018-07)</h3>
+<p><a href="https://orcid.org/0000-0001-8626-918X">Dirk <b>Lowke</b> <picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/orcid.svg" ><img src="../../dat/md/ico/wm/orcid.svg" width="16" height="16"></picture></a>,
+<a href="https://orcid.org/0000-0002-6323-3368">Enrico <b>Dini</b> <picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/orcid.svg" ><img src="../../dat/md/ico/wm/orcid.svg" width="16" height="16"></picture></a>,
+<a href="https://orcid.org/0000-0002-7105-4212">Arnaud <b>Perrot</b> <picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/orcid.svg" ><img src="../../dat/md/ico/wm/orcid.svg" width="16" height="16"></picture></a>,
+<a href="https://orcid.org/0000-0003-3762-5592">Daniel <b>Weger</b> <picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/orcid.svg" ><img src="../../dat/md/ico/wm/orcid.svg" width="16" height="16"></picture></a>,
+<a href="https://orcid.org/0000-0002-1214-3960">Christoph <b>Gehlen</b> <picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/orcid.svg" ><img src="../../dat/md/ico/wm/orcid.svg" width="16" height="16"></picture></a>,
+<a href="https://orcid.org/0000-0002-5153-2985">Benjamin <b>Dillenburger</b> <picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/orcid.svg" ><img src="../../dat/md/ico/wm/orcid.svg" width="16" height="16"></picture></a><br>Journal Article – Cement and Concrete Research, Vol. 112, pp. 50-65</p>
+<details><summary>Abstract</summary>This article provides an overview of different particle-bed 3D printing techniques for the production of concrete elements. A classification is proposed which considers the direct production of concrete components, the production of formwork as well as composite components by means of a permanent formwork. Three techniques are considered as relevant for concrete construction, i.e. selective binder activation, selective paste intrusion and binder jetting. Design as well as material aspects are addressed. The underlying physics of fluid infiltration into the particle-bed and its effect on the properties of the hardened material are discussed on the basis of recent research results. Finally, the first applications of particle-bed 3D printing are presented which demonstrate the potential of this technique in concrete construction.</details>
+<details><summary>Metrics</summary><img src="../../dat/md/fig/lowk_dini_perr_wege.2018.PB3PiCC.svg"></details>
+<p><a href="https://scholar.google.com/scholar_lookup?title=Particle-Bed%203D%20Printing%20in%20Concrete%20Construction" title="Search on Google Scholar"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/googlescholar.svg" ><img src="../../dat/md/ico/wm/googlescholar.svg" width="16" height="16"></picture></a>
+<a href="https://www.webofscience.com/wos/woscc/full-record/WOS:000444357300005" title="Search on Web of Science"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/wos.svg" ><img src="../../dat/md/ico/wm/wos.svg" width="16" height="16"></picture></a>
+<a href="http://www.scopus.com/record/display.url?eid=2-s2.0-85050668034&origin=resultslist" title="Search on Scopus"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/scopus.svg" ><img src="../../dat/md/ico/wm/scopus.svg" width="16" height="16"></picture></a>
+<picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/blank.svg"><img src="../../dat/md/ico/wm/blank.svg" width="16" height="16"></picture><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/blank.svg"><img src="../../dat/md/ico/wm/blank.svg" width="16" height="16"></picture><a href="https://plu.mx/plum/a/?doi=10.1016/j.cemconres.2018.05.018" title="Search on plu.mx"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/plumx.svg" ><img src="../../dat/md/ico/wm/plumx.svg" width="16" height="16"></picture></a>
+<picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/blank.svg"><img src="../../dat/md/ico/wm/blank.svg" width="16" height="16"></picture><a href="https://api.crossref.org/works/10.1016/j.cemconres.2018.05.018" title="Search on Crossref"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/crossref.svg" ><img src="../../dat/md/ico/wm/crossref.svg" width="16" height="16"></picture></a>
+<a href="https://api.openalex.org/works/doi:10.1016/j.cemconres.2018.05.018" title="Search on OpenAlex"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/openalex.svg" ><img src="../../dat/md/ico/wm/openalex.svg" width="16" height="16"></picture></a>
+<picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/blank.svg"><img src="../../dat/md/ico/wm/blank.svg" width="16" height="16"></picture><a href="https://api.semanticscholar.org/graph/v1/paper/10.1016/j.cemconres.2018.05.018" title="Search on Semantic Scholar"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/semanticscholar.svg" ><img src="../../dat/md/ico/wm/semanticscholar.svg" width="16" height="16"></picture></a>
+<a href="https://opencitations.net/meta/api/v1/metadata/doi:10.1016/j.cemconres.2018.05.018" title="Search on Open Citations"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/opencitations.svg" ><img src="../../dat/md/ico/wm/opencitations.svg" width="16" height="16"></picture></a>
+<a href="https://www.researchgate.net/search.Search.html?query=10.1016/j.cemconres.2018.05.018&type=publication&type=publication" title="Search on Researchgate"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/researchgate.svg" ><img src="../../dat/md/ico/wm/researchgate.svg" width="16" height="16"></picture></a>
+<a href="https://scite.ai/reports/particle-bed-3d-printing-in-concrete-2NyzLeJ" title="Search on Scite" ><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/scite.svg"><img src="../../dat/md/ico/wm/scite.svg" width="16" height="16"></picture></a>
+<a href="https://inciteful.xyz/p/W2886982351" title="Search on Inciteful"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/connectedpapers.svg" ><img src="../../dat/md/ico/wm/connectedpapers.svg" width="16" height="16"></picture></a></p>
+<hr />
+<p><a id="nereogurmech2018IRiDCC"></a></p>
+<h3 id="incorporating-reinforcement-into-digital-concrete-construction-2018-07"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/closedaccess.svg"><img src="../../dat/md/ico/wm/closedaccess.svg" width="16" height="16"></picture> <a href="https://github.com/dan-auer/3dcp.fyi/blob/main/dat/3dcp.fyi.bib#L39005-L39013" title="Get the BibTeX Entry"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/bibtex.svg"><img src="../../dat/md/ico/wm/bibtex.svg" width="16" height="16"></picture></a> <a href="https://doi.org/None" title="DOI" ><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/doi.svg" ><img src="../../dat/md/ico/wm/doi.svg" width="16" height="16"></picture></a> <a href="https://crossmark.crossref.org/dialog/?doi=None&domain=pdf" title="Crossmark" ><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/crossmark.svg" ><img src="../../dat/md/ico/wm/crossmark.svg" width="16" height="16"></picture></a> <picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/blank.svg"><img src="../../dat/md/ico/wm/blank.svg" width="16" height="16"></picture> Incorporating Reinforcement into Digital Concrete Construction (2018-07)</h3>
+<p><a href="https://orcid.org/0000-0002-8580-5320">Venkatesh <b>Nerella</b> <picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/orcid.svg" ><img src="../../dat/md/ico/wm/orcid.svg" width="16" height="16"></picture></a>,
+<a href="https://orcid.org/0000-0003-0262-9913">Hiroki <b>Ogura</b> <picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/orcid.svg" ><img src="../../dat/md/ico/wm/orcid.svg" width="16" height="16"></picture></a>,
+<a href="https://orcid.org/0000-0002-4685-7064">Viktor <b>Mechtcherine</b> <picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/orcid.svg" ><img src="../../dat/md/ico/wm/orcid.svg" width="16" height="16"></picture></a><br>Contribution – Proceedings of the IASS 2018 Annual Symposium</p>
+<details><summary>Abstract</summary>Digital construction (DC) or 3d-concrete-printing is causing a paradigm shift in construction processes towards complete automation, enabling faster, productive and cost-efficient construction of complex structures. DC is also facilitating and inspiring creativity in structural design. However, the stumbling block on the way to wide-spread application of DC is the implementation of reinforcement, for which no complete solutions are available yet. This article gives a brief overview of various approaches for integrating reinforcement in digitally produced concrete structures. In addition, experimental investigations, following two approaches viz. a) use of short fibers pre-mixed in printable concrete and b) 3d-printing of steel reinforcement will be delineated. Experimental investigations on 3d-printed (gasmetal arc welding based) steel reinforcement showed that its tensile strength, strain capacity as well as bond to concrete are comparable to those of conventional steel rebar. The 3d-printed strain-hardening cement-based composite (PSHCC – printable SHCC) exhibited remarkable performance in terms of tensile strength and strain capacity too, thanks to addition of high-strength polyethylene (PE) fibers. The mechanical properties of PSHCC were found to be comparable to those of casted SHCC.</details>
+<p><a href="https://scholar.google.com/scholar_lookup?title=Incorporating%20Reinforcement%20into%20Digital%20Concrete%20Construction" title="Search on Google Scholar"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/googlescholar.svg" ><img src="../../dat/md/ico/wm/googlescholar.svg" width="16" height="16"></picture></a>
+<picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/blank.svg"><img src="../../dat/md/ico/wm/blank.svg" width="16" height="16"></picture><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/blank.svg"><img src="../../dat/md/ico/wm/blank.svg" width="16" height="16"></picture><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/blank.svg"><img src="../../dat/md/ico/wm/blank.svg" width="16" height="16"></picture><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/blank.svg"><img src="../../dat/md/ico/wm/blank.svg" width="16" height="16"></picture><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/blank.svg"><img src="../../dat/md/ico/wm/blank.svg" width="16" height="16"></picture><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/blank.svg"><img src="../../dat/md/ico/wm/blank.svg" width="16" height="16"></picture><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/blank.svg"><img src="../../dat/md/ico/wm/blank.svg" width="16" height="16"></picture><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/blank.svg"><img src="../../dat/md/ico/wm/blank.svg" width="16" height="16"></picture><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/blank.svg"><img src="../../dat/md/ico/wm/blank.svg" width="16" height="16"></picture><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/blank.svg"><img src="../../dat/md/ico/wm/blank.svg" width="16" height="16"></picture><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/blank.svg"><img src="../../dat/md/ico/wm/blank.svg" width="16" height="16"></picture><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/blank.svg"><img src="../../dat/md/ico/wm/blank.svg" width="16" height="16"></picture><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/blank.svg"><img src="../../dat/md/ico/wm/blank.svg" width="16" height="16"></picture></p>
+<hr />
+<p><a id="schw2018GSaTPfDDaFwC"></a></p>
+<h3 id="graphic-statics-and-their-potential-for-digital-design-and-fabrication-with-concrete-2018-07"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/closedaccess.svg"><img src="../../dat/md/ico/wm/closedaccess.svg" width="16" height="16"></picture> <a href="https://github.com/dan-auer/3dcp.fyi/blob/main/dat/3dcp.fyi.bib#L48742-L48754" title="Get the BibTeX Entry"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/bibtex.svg"><img src="../../dat/md/ico/wm/bibtex.svg" width="16" height="16"></picture></a> <a href="https://doi.org/10.1016/j.cemconres.2018.06.015" title="DOI" ><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/doi.svg" ><img src="../../dat/md/ico/wm/doi.svg" width="16" height="16"></picture></a> <a href="https://crossmark.crossref.org/dialog/?doi=10.1016/j.cemconres.2018.06.015&domain=pdf" title="Crossmark" ><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/crossmark.svg" ><img src="../../dat/md/ico/wm/crossmark.svg" width="16" height="16"></picture></a> <picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/blank.svg"><img src="../../dat/md/ico/wm/blank.svg" width="16" height="16"></picture> Graphic Statics and Their Potential for Digital Design and Fabrication with Concrete (2018-07)</h3>
+<p>Joseph <b>Schwartz</b><br>Journal Article – Cement and Concrete Research, Vol. 112, pp. 122-135</p>
+<details><summary>Abstract</summary>The paper describes the influence of the lower bound theorem of theory of plasticity on the design of structures during the last 70 years. Starting with the fundamental theorems developed in the middle of the last century, the influence of rigid plastic (discontinuous) stress fields on the design of reinforced beam, wall, slab and shell structures is worked out. The potential of graphic statics for digital design and fabrication is illustrated by the results of several research projects on form finding and design of reinforced concrete structures carried out during the last decade. It is shown that the design methods allow for simultaneous considerations about structure and architecture. This leads to leaner structure and reduced material consumption. However, while a current limitation of manufacturing objects in these “nonstandard” shapes is presently cost limiting, digital fabrication may change this and open a much greater scope for the use and application of graphic statics in a near future.</details>
+<details><summary>Metrics</summary><img src="../../dat/md/fig/schw.2018.GSaTPfDDaFwC.svg"></details>
+<p><a href="https://scholar.google.com/scholar_lookup?title=Graphic%20Statics%20and%20Their%20Potential%20for%20Digital%20Design%20and%20Fabrication%20with%20Concrete" title="Search on Google Scholar"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/googlescholar.svg" ><img src="../../dat/md/ico/wm/googlescholar.svg" width="16" height="16"></picture></a>
+<a href="https://www.webofscience.com/wos/woscc/full-record/WOS:000444357300011" title="Search on Web of Science"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/wos.svg" ><img src="../../dat/md/ico/wm/wos.svg" width="16" height="16"></picture></a>
+<a href="http://www.scopus.com/record/display.url?eid=2-s2.0-85050411227&origin=resultslist" title="Search on Scopus"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/scopus.svg" ><img src="../../dat/md/ico/wm/scopus.svg" width="16" height="16"></picture></a>
+<picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/blank.svg"><img src="../../dat/md/ico/wm/blank.svg" width="16" height="16"></picture><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/blank.svg"><img src="../../dat/md/ico/wm/blank.svg" width="16" height="16"></picture><a href="https://plu.mx/plum/a/?doi=10.1016/j.cemconres.2018.06.015" title="Search on plu.mx"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/plumx.svg" ><img src="../../dat/md/ico/wm/plumx.svg" width="16" height="16"></picture></a>
+<picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/blank.svg"><img src="../../dat/md/ico/wm/blank.svg" width="16" height="16"></picture><a href="https://api.crossref.org/works/10.1016/j.cemconres.2018.06.015" title="Search on Crossref"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/crossref.svg" ><img src="../../dat/md/ico/wm/crossref.svg" width="16" height="16"></picture></a>
+<a href="https://api.openalex.org/works/doi:10.1016/j.cemconres.2018.06.015" title="Search on OpenAlex"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/openalex.svg" ><img src="../../dat/md/ico/wm/openalex.svg" width="16" height="16"></picture></a>
+<picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/blank.svg"><img src="../../dat/md/ico/wm/blank.svg" width="16" height="16"></picture><a href="https://api.semanticscholar.org/graph/v1/paper/10.1016/j.cemconres.2018.06.015" title="Search on Semantic Scholar"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/semanticscholar.svg" ><img src="../../dat/md/ico/wm/semanticscholar.svg" width="16" height="16"></picture></a>
+<a href="https://opencitations.net/meta/api/v1/metadata/doi:10.1016/j.cemconres.2018.06.015" title="Search on Open Citations"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/opencitations.svg" ><img src="../../dat/md/ico/wm/opencitations.svg" width="16" height="16"></picture></a>
+<a href="https://www.researchgate.net/search.Search.html?query=10.1016/j.cemconres.2018.06.015&type=publication&type=publication" title="Search on Researchgate"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/researchgate.svg" ><img src="../../dat/md/ico/wm/researchgate.svg" width="16" height="16"></picture></a>
+<a href="https://scite.ai/reports/graphic-statics-and-their-potential-y8QWZPa" title="Search on Scite" ><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/scite.svg"><img src="../../dat/md/ico/wm/scite.svg" width="16" height="16"></picture></a>
+<a href="https://inciteful.xyz/p/W2883208246" title="Search on Inciteful"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/connectedpapers.svg" ><img src="../../dat/md/ico/wm/connectedpapers.svg" width="16" height="16"></picture></a></p>
+<hr />
+<p><a id="silvandekudsjrg20183CPoPTE"></a></p>
+<h3 id="3d-concrete-printing-of-post-tensioned-elements-2018-07"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/closedaccess.svg"><img src="../../dat/md/ico/wm/closedaccess.svg" width="16" height="16"></picture> <a href="https://github.com/dan-auer/3dcp.fyi/blob/main/dat/3dcp.fyi.bib#L50333-L50341" title="Get the BibTeX Entry"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/bibtex.svg"><img src="../../dat/md/ico/wm/bibtex.svg" width="16" height="16"></picture></a> <a href="https://doi.org/None" title="DOI" ><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/doi.svg" ><img src="../../dat/md/ico/wm/doi.svg" width="16" height="16"></picture></a> <a href="https://crossmark.crossref.org/dialog/?doi=None&domain=pdf" title="Crossmark" ><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/crossmark.svg" ><img src="../../dat/md/ico/wm/crossmark.svg" width="16" height="16"></picture></a> <picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/blank.svg"><img src="../../dat/md/ico/wm/blank.svg" width="16" height="16"></picture> 3D Concrete Printing of Post-Tensioned Elements (2018-07)</h3>
+<p><a href="https://orcid.org/0000-0001-9895-5128">Wilson <b>da Silva</b> <picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/orcid.svg" ><img src="../../dat/md/ico/wm/orcid.svg" width="16" height="16"></picture></a>,
+Thomas <b>Andersen</b>,
+Anders <b>Kudsk</b>,
+Kåre <b>Jørgensen</b><br>Contribution – Proceedings of the IASS 2018 Annual Symposium</p>
+<details><summary>Abstract</summary>This paper addresses the challenges and opportunities related to material development and architectural design in a 3D Concrete Printing (3DCP) context. We describe the workflow used in the design and manufacturing of a post-tensioned concrete structure using 3D Printed modules. In this process, concrete extrusion was deployed in a 6-axis robot. The motivation to use 3DCP was to exploit 3DCP’s potential in design freedom and digital fabrication, while featuring the use of post-tensioned reinforcement, and to realize one of the first 3D Concrete Printed structures in Denmark. The experiments carried out to determine the concrete mix design and printing parameters as well as the production of the posttensioned structure were based on an empirical approach; with the primary goals being the identification of the challenges in this innovative process that is 3DCP and the validation of a design concept through the production of a structure that was showcase in Aarhus, Denmark in mid-2017. As such, the findings listed in this paper serves as a guide for researchers and engineers that are interested in understanding the design to fabrication challenges when deploying 3DCP in construction.</details>
+<p><a href="https://scholar.google.com/scholar_lookup?title=3D%20Concrete%20Printing%20of%20Post-Tensioned%20Elements" title="Search on Google Scholar"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/googlescholar.svg" ><img src="../../dat/md/ico/wm/googlescholar.svg" width="16" height="16"></picture></a>
+<picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/blank.svg"><img src="../../dat/md/ico/wm/blank.svg" width="16" height="16"></picture><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/blank.svg"><img src="../../dat/md/ico/wm/blank.svg" width="16" height="16"></picture><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/blank.svg"><img src="../../dat/md/ico/wm/blank.svg" width="16" height="16"></picture><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/blank.svg"><img src="../../dat/md/ico/wm/blank.svg" width="16" height="16"></picture><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/blank.svg"><img src="../../dat/md/ico/wm/blank.svg" width="16" height="16"></picture><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/blank.svg"><img src="../../dat/md/ico/wm/blank.svg" width="16" height="16"></picture><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/blank.svg"><img src="../../dat/md/ico/wm/blank.svg" width="16" height="16"></picture><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/blank.svg"><img src="../../dat/md/ico/wm/blank.svg" width="16" height="16"></picture><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/blank.svg"><img src="../../dat/md/ico/wm/blank.svg" width="16" height="16"></picture><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/blank.svg"><img src="../../dat/md/ico/wm/blank.svg" width="16" height="16"></picture><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/blank.svg"><img src="../../dat/md/ico/wm/blank.svg" width="16" height="16"></picture><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/blank.svg"><img src="../../dat/md/ico/wm/blank.svg" width="16" height="16"></picture><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/blank.svg"><img src="../../dat/md/ico/wm/blank.svg" width="16" height="16"></picture></p>
+<hr />
+<p><a id="taytingqianpand2019TGEoBSo3PC"></a></p>
+<h3 id="time-gap-effect-on-bond-strength-of-3d-printed-concrete-2018-07"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/openaccess.svg"><img src="../../dat/md/ico/wm/openaccess.svg" width="16" height="16"></picture> <a href="https://github.com/dan-auer/3dcp.fyi/blob/main/dat/3dcp.fyi.bib#L54230-L54243" title="Get the BibTeX Entry"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/bibtex.svg"><img src="../../dat/md/ico/wm/bibtex.svg" width="16" height="16"></picture></a> <a href="https://doi.org/10.1080/17452759.2018.1500420" title="DOI" ><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/doi.svg" ><img src="../../dat/md/ico/wm/doi.svg" width="16" height="16"></picture></a> <a href="https://crossmark.crossref.org/dialog/?doi=10.1080/17452759.2018.1500420&domain=pdf" title="Crossmark" ><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/crossmark.svg" ><img src="../../dat/md/ico/wm/crossmark.svg" width="16" height="16"></picture></a> <a href="https://dr.ntu.edu.sg/bitstream/10356/136859/2/Time%20gap%20effect%20on%20bond%20strength%20of%203D-printed%20concrete.pdf" title="Get the *.pdf via unpaywall.com" ><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/down.svg" ><img src="../../dat/md/ico/wm/down.svg" width="16" height="16"></picture></a> Time-Gap-Effect on Bond Strength of 3D Printed Concrete (2018-07)</h3>
+<p><a href="https://orcid.org/0000-0002-7369-2138">Yi <b>Tay</b> <picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/orcid.svg" ><img src="../../dat/md/ico/wm/orcid.svg" width="16" height="16"></picture></a>,
+<a href="https://orcid.org/0000-0002-7339-3031">Guan <b>Ting</b> <picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/orcid.svg" ><img src="../../dat/md/ico/wm/orcid.svg" width="16" height="16"></picture></a>,
+<a href="https://orcid.org/0000-0002-9957-1078">Ye <b>Qian</b> <picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/orcid.svg" ><img src="../../dat/md/ico/wm/orcid.svg" width="16" height="16"></picture></a>,
+<a href="https://orcid.org/0000-0002-3563-7744">Biranchi <b>Panda</b> <picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/orcid.svg" ><img src="../../dat/md/ico/wm/orcid.svg" width="16" height="16"></picture></a>,
+Lewei <b>He</b>,
+<a href="https://orcid.org/0000-0002-3583-1723">Ming <b>Tan</b> <picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/orcid.svg" ><img src="../../dat/md/ico/wm/orcid.svg" width="16" height="16"></picture></a><br>Journal Article – Virtual and Physical Prototyping, Vol. 14, No. 1, pp. 104-113</p>
+<details><summary>Abstract</summary>An advancing technology that combines the concrete extrusion with a motion control to create structures with complex geometrical shapes without the need for formwork is known as 3D concrete printing. Since this technique prints layer by layer, the time taken to reach the same position in the subsequent layer is important as it will create an anisotropic property that has a weaker tensile strength at the bond interface of the two printed filaments. Through rheological measurement, which reveals the material deformation and flow behaviour, it is possible to examine the material structural build-up due to time-gap effect by measuring at different time delay. This paper focuses on investigating the time-gap effect on the printed filament with rheological and observation at macroscopic-scale to understand the material behaviour of the initial and subsequent printed layer during its fresh phase. Rheological experiment findings reveal that the tensile strength of the printed specimen is correlated to the material modulus at the initial layer</details>
+<details><summary>Metrics</summary><img src="../../dat/md/fig/tay_ting_qian_pand.2019.TGEoBSo3PC.svg"></details>
+<p><a href="https://scholar.google.com/scholar_lookup?title=Time-Gap-Effect%20on%20Bond%20Strength%20of%203D%20Printed%20Concrete" title="Search on Google Scholar"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/googlescholar.svg" ><img src="../../dat/md/ico/wm/googlescholar.svg" width="16" height="16"></picture></a>
+<a href="https://www.webofscience.com/wos/woscc/full-record/WOS:000454720200008" title="Search on Web of Science"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/wos.svg" ><img src="../../dat/md/ico/wm/wos.svg" width="16" height="16"></picture></a>
+<a href="http://www.scopus.com/record/display.url?eid=2-s2.0-85050354929&origin=resultslist" title="Search on Scopus"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/scopus.svg" ><img src="../../dat/md/ico/wm/scopus.svg" width="16" height="16"></picture></a>
+<picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/blank.svg"><img src="../../dat/md/ico/wm/blank.svg" width="16" height="16"></picture><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/blank.svg"><img src="../../dat/md/ico/wm/blank.svg" width="16" height="16"></picture><a href="https://plu.mx/plum/a/?doi=10.1080/17452759.2018.1500420" title="Search on plu.mx"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/plumx.svg" ><img src="../../dat/md/ico/wm/plumx.svg" width="16" height="16"></picture></a>
+<picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/blank.svg"><img src="../../dat/md/ico/wm/blank.svg" width="16" height="16"></picture><a href="https://api.crossref.org/works/10.1080/17452759.2018.1500420" title="Search on Crossref"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/crossref.svg" ><img src="../../dat/md/ico/wm/crossref.svg" width="16" height="16"></picture></a>
+<a href="https://api.openalex.org/works/doi:10.1080/17452759.2018.1500420" title="Search on OpenAlex"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/openalex.svg" ><img src="../../dat/md/ico/wm/openalex.svg" width="16" height="16"></picture></a>
+<picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/blank.svg"><img src="../../dat/md/ico/wm/blank.svg" width="16" height="16"></picture><a href="https://api.semanticscholar.org/graph/v1/paper/10.1080/17452759.2018.1500420" title="Search on Semantic Scholar"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/semanticscholar.svg" ><img src="../../dat/md/ico/wm/semanticscholar.svg" width="16" height="16"></picture></a>
+<a href="https://opencitations.net/meta/api/v1/metadata/doi:10.1080/17452759.2018.1500420" title="Search on Open Citations"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/opencitations.svg" ><img src="../../dat/md/ico/wm/opencitations.svg" width="16" height="16"></picture></a>
+<a href="https://www.researchgate.net/search.Search.html?query=10.1080/17452759.2018.1500420&type=publication&type=publication" title="Search on Researchgate"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/researchgate.svg" ><img src="../../dat/md/ico/wm/researchgate.svg" width="16" height="16"></picture></a>
+<a href="https://scite.ai/reports/time-gap-effect-on-bond-mOEn5Xz" title="Search on Scite" ><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/scite.svg"><img src="../../dat/md/ico/wm/scite.svg" width="16" height="16"></picture></a>
+<a href="https://inciteful.xyz/p/W2883378394" title="Search on Inciteful"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/connectedpapers.svg" ><img src="../../dat/md/ico/wm/connectedpapers.svg" width="16" height="16"></picture></a></p>
+<hr />
+<p><a id="xuding2018VF3CPUaVDSN"></a></p>
+<h3 id="volume-forming-3d-concrete-printing-using-a-variable-diameter-square-nozzle-2018-07"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/openaccess.svg"><img src="../../dat/md/ico/wm/openaccess.svg" width="16" height="16"></picture> <a href="https://github.com/dan-auer/3dcp.fyi/blob/main/dat/3dcp.fyi.bib#L60015-L60029" title="Get the BibTeX Entry"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/bibtex.svg"><img src="../../dat/md/ico/wm/bibtex.svg" width="16" height="16"></picture></a> <a href="https://doi.org/10.3311/ccc2018-015" title="DOI" ><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/doi.svg" ><img src="../../dat/md/ico/wm/doi.svg" width="16" height="16"></picture></a> <a href="https://crossmark.crossref.org/dialog/?doi=10.3311/ccc2018-015&domain=pdf" title="Crossmark" ><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/crossmark.svg" ><img src="../../dat/md/ico/wm/crossmark.svg" width="16" height="16"></picture></a> <a href="https://repozitorium.omikk.bme.hu/bitstream/10890/5677/1/CCC2018-015.pdf" title="Get the *.pdf via unpaywall.com" ><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/down.svg" ><img src="../../dat/md/ico/wm/down.svg" width="16" height="16"></picture></a> Volume-Forming 3D Concrete Printing Using a Variable-Diameter Square Nozzle (2018-07)</h3>
+<p><a href="https://orcid.org/0000-0001-5851-4379">Jie <b>Xu</b> <picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/orcid.svg" ><img src="../../dat/md/ico/wm/orcid.svg" width="16" height="16"></picture></a>,
+<a href="https://orcid.org/0000-0002-9873-3776">Lieyun <b>Ding</b> <picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/orcid.svg" ><img src="../../dat/md/ico/wm/orcid.svg" width="16" height="16"></picture></a><br>Contribution – Proceedings of Creative Construction Conference 2018</p>
+<details><summary>Abstract</summary>3D Concrete Printing (3DCP) process is rapidly developing worldwide, showing its ability to construct large-scale components or even a building. However, the current 3DCP process has found it hard to manufacture architectural components with detailed ornamentations and features on their surface due to the Fused Deposition Modelling (FDM) manner that generates fixed-width thick filaments. This paper introduces a novel Volume - Forming 3D Concrete Printing (VF3DCP) method applying a variable-diameter square nozzle to manufacture architectural ornaments. The VF3DCP method directly fabricates a variable cross-section volume during one-time work instead of an FDM accumulation process. A VF3DCP extrusion kit prototype containing a steering module and a nozzle-varying module and a particular adaptive tool path planning algorithm are developed. Functional relationships of four key process parameters for a trial material, including nozzle diameter, nozzle moving velocity, material extrusion rate and tool path curvature radius, are fitted by process tests. Finally, a case study into a VF3DCP architectural carve pattern is conducted, which shows the potential of the proposed method in manufacturing architectural ornaments.</details>
+<details><summary>Metrics</summary><img src="../../dat/md/fig/xu_ding.2018.VF3CPUaVDSN.svg"></details>
+<p><a href="https://scholar.google.com/scholar_lookup?title=Volume-Forming%203D%20Concrete%20Printing%20Using%20a%20Variable-Diameter%20Square%20Nozzle" title="Search on Google Scholar"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/googlescholar.svg" ><img src="../../dat/md/ico/wm/googlescholar.svg" width="16" height="16"></picture></a>
+<picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/blank.svg"><img src="../../dat/md/ico/wm/blank.svg" width="16" height="16"></picture><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/blank.svg"><img src="../../dat/md/ico/wm/blank.svg" width="16" height="16"></picture><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/blank.svg"><img src="../../dat/md/ico/wm/blank.svg" width="16" height="16"></picture><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/blank.svg"><img src="../../dat/md/ico/wm/blank.svg" width="16" height="16"></picture><a href="https://plu.mx/plum/a/?doi=10.3311/ccc2018-015" title="Search on plu.mx"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/plumx.svg" ><img src="../../dat/md/ico/wm/plumx.svg" width="16" height="16"></picture></a>
+<picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/blank.svg"><img src="../../dat/md/ico/wm/blank.svg" width="16" height="16"></picture><a href="https://api.crossref.org/works/10.3311/ccc2018-015" title="Search on Crossref"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/crossref.svg" ><img src="../../dat/md/ico/wm/crossref.svg" width="16" height="16"></picture></a>
+<a href="https://api.openalex.org/works/doi:10.3311/ccc2018-015" title="Search on OpenAlex"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/openalex.svg" ><img src="../../dat/md/ico/wm/openalex.svg" width="16" height="16"></picture></a>
+<picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/blank.svg"><img src="../../dat/md/ico/wm/blank.svg" width="16" height="16"></picture><a href="https://api.semanticscholar.org/graph/v1/paper/10.3311/ccc2018-015" title="Search on Semantic Scholar"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/semanticscholar.svg" ><img src="../../dat/md/ico/wm/semanticscholar.svg" width="16" height="16"></picture></a>
+<a href="https://opencitations.net/meta/api/v1/metadata/doi:10.3311/ccc2018-015" title="Search on Open Citations"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/opencitations.svg" ><img src="../../dat/md/ico/wm/opencitations.svg" width="16" height="16"></picture></a>
+<a href="https://www.researchgate.net/search.Search.html?query=10.3311/ccc2018-015&type=publication&type=publication" title="Search on Researchgate"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/researchgate.svg" ><img src="../../dat/md/ico/wm/researchgate.svg" width="16" height="16"></picture></a>
+<a href="https://scite.ai/reports/volume-forming-3d-concrete-MVvjJj9" title="Search on Scite" ><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/scite.svg"><img src="../../dat/md/ico/wm/scite.svg" width="16" height="16"></picture></a>
+<a href="https://inciteful.xyz/p/W2903482893" title="Search on Inciteful"><picture><source media="(prefers-color-scheme: dark)" srcset="../../dat/md/ico/dm/connectedpapers.svg" ><img src="../../dat/md/ico/wm/connectedpapers.svg" width="16" height="16"></picture></a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "search.highlight", "search.share", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+    
+  </body>
+</html>
