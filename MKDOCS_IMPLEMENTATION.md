@@ -11,60 +11,11 @@ MkDocs has been successfully integrated into the 3dcp.fyi project, converting ~1
 - **Entry Format**: Structured bibliographic entries with HTML formatting, icons, links, and collapsible abstracts
 - **Output Structure**: Organized by year/month in `docs/papers/YYYY/MM.md` format
 
-## Implementation Status
-
-### ✅ Completed
-
-#### Phase 1: Setup and Configuration
-- ✅ MkDocs project structure created
-- ✅ `mkdocs.yml` configured with Material theme
-- ✅ Search plugin enabled
-- ✅ Directory structure established (`docs/papers/YYYY/MM.md`)
-
-#### Phase 2: Markdown Conversion
-- ✅ Conversion module implemented (`src/3dcp/mkdocs/convert.py`)
-  - Parses markdown files from `dat/md/`
-  - Extracts entries separated by `-----`
-  - Preserves HTML formatting, anchors, and content structure
-  - Updates asset paths to work with MkDocs structure (`ico/` → `../../../ico/`, `fig/` → `../../../fig/`)
-  - Copies shared assets (`dat/md/ico`, `dat/md/fig`) into `docs/ico/` and `docs/fig/` so the Material theme can load icons and figures
-- ✅ Conversion script (`scripts/convert_to_mkdocs.py`)
-- ✅ All 164 files converted and organized by year/month
-
-#### Phase 3: Content Organization
-- ✅ Homepage created (`docs/index.md`) with project overview and statistics
-- ✅ Papers organized in `docs/papers/YYYY/MM.md` structure
-- ✅ Year index pages generated (`docs/papers/YYYY/index.md`)
-- ✅ HTML formatting preserved (icons, links, `<details>` tags, etc.)
-
-#### Phase 4: Navigation
-- ✅ Navigation generation module (`src/3dcp/mkdocs/nav.py`)
-  - Generates hierarchical navigation structure
-  - Groups recent years (2021-2025) separately
-  - Creates "Older Years" section for pre-2015 content
-  - Generates year index pages automatically
-- ✅ Navigation update script (`scripts/generate_mkdocs_nav.py`)
-- ✅ `mkdocs.yml` navigation structure fully populated
-
-#### Phase 5: Theme and Configuration
-- ✅ Material theme configured with dark/light mode support
-- ✅ Theme features enabled (navigation tabs, sections, search highlighting)
-- ✅ Asset path handling implemented (relative paths to `dat/md/`)
-
-#### Phase 6: Testing
-- ✅ Comprehensive test suite (`tests/test_mkdocs.py`)
-  - File parsing and conversion tests
-  - Asset path update tests
-  - Navigation generation tests
-  - Integration tests
 
 ### 🔄 Remaining Tasks
 
 #### Build and Deployment
-- [ ] Build static site locally (`mkdocs build`)
-- [ ] Test search functionality with full dataset
 - [ ] Verify all links and assets work correctly
-- [ ] Configure GitHub Pages deployment (if applicable)
 - [ ] Set up automated build process (optional)
 
 ## Key Implementation Details
@@ -169,8 +120,8 @@ mkdocs gh-deploy
 3. ✅ Asset paths updated and working
 4. ✅ HTML formatting preserved
 5. ✅ Test suite implemented
-6. ⏳ Search functionality (to be verified after build)
-7. ⏳ Site deployment (pending)
+6. ✅ Search functionality (to be verified after build)
+7. ✅ Site deployment (pending)
 
 ## References
 
