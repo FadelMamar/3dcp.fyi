@@ -1,6 +1,7 @@
 """Convert markdown files from dat/md/ to MkDocs structure."""
 
 import re
+import shutil
 from pathlib import Path
 from collections import defaultdict
 from typing import List, Dict, Tuple
@@ -17,21 +18,35 @@ def parse_year_month(filename: str) -> Tuple[int, int]:
 def update_asset_paths(content: str) -> str:
     """
     Update asset paths in content to work from MkDocs structure.
-    
-    Changes:
-    - ico/dm/ -> ../../dat/md/ico/dm/
-    - ico/wm/ -> ../../dat/md/ico/wm/
-    - fig/ -> ../../dat/md/fig/
     """
     # Update icon paths (both dm and wm)
-    content = re.sub(r'srcset="ico/(dm|wm)/', r'srcset="../../dat/md/ico/\1/', content)
-    content = re.sub(r'src="ico/(dm|wm)/', r'src="../../dat/md/ico/\1/', content)
+    content = re.sub(r'srcset="ico/(dm|wm)/', r'srcset="../../../dat/md/ico/\1/', content)
+    content = re.sub(r'src="ico/(dm|wm)/', r'src="../../../dat/md/ico/\1/', content)
     
     # Update figure paths
-    content = re.sub(r'src="fig\\', r'src="../../dat/md/fig/', content)
-    content = re.sub(r'src="fig/', r'src="../../dat/md/fig/', content)
+    content = re.sub(r'src="fig\\', r'src="../../../dat/md/fig/', content)
+    content = re.sub(r'src="fig/', r'src="../../../dat/md/fig/', content)
     
     return content
+
+
+def sync_assets(source_dir: Path, docs_dir: Path) -> None:
+    """
+    Ensure that asset folders referenced by the converted markdown files
+    are available within the MkDocs docs directory.
+    """
+    asset_target_base = docs_dir / 'dat' / 'md'
+    asset_target_base.mkdir(parents=True, exist_ok=True)
+
+    for folder in ('fig', 'ico'):
+        source_path = source_dir / folder
+        target_path = asset_target_base / folder
+
+        if not source_path.exists():
+            print(f"Warning: Asset folder not found, skipping: {source_path}")
+            continue
+
+        shutil.copytree(source_path, target_path, dirs_exist_ok=True)
 
 
 def parse_markdown_file(file_path: Path) -> List[str]:
@@ -140,5 +155,9 @@ def convert_to_mkdocs(project_root: Path) -> Tuple[int, int, Dict[int, List[Tupl
             except Exception as e:
                 print(f"Error converting {source_file.name}: {e}")
     
+    # Ensure shared assets (icons, figures) are copied for MkDocs to serve
+    docs_dir = project_root / 'docs'
+    sync_assets(source_dir, docs_dir)
+
     return total_files, total_entries, files_by_year
 

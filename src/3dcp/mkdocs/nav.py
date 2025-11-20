@@ -107,7 +107,7 @@ def generate_nav_structure(docs_dir: Path, generate_index: bool = False, docs_ba
         # Get all markdown files and filter out index.md and other non-numeric files
         month_files = [f for f in year_dir.glob('*.md') if f.stem.isdigit()]
         # Sort by numeric month value (not string order)
-        month_files.sort(key=lambda f: int(f.stem))
+        month_files.sort(key=lambda f: int(f.stem),reverse=True)
         
         if month_files:
             # Generate index.md for this year if requested

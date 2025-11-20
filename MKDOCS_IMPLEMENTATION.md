@@ -26,7 +26,8 @@ MkDocs has been successfully integrated into the 3dcp.fyi project, converting ~1
   - Parses markdown files from `dat/md/`
   - Extracts entries separated by `-----`
   - Preserves HTML formatting, anchors, and content structure
-  - Updates asset paths to work with MkDocs structure (`ico/` → `../../dat/md/ico/`, `fig/` → `../../dat/md/fig/`)
+  - Updates asset paths to work with MkDocs structure (`ico/` → `../../../dat/md/ico/`, `fig/` → `../../../dat/md/fig/`)
+  - Copies shared assets (`dat/md/ico`, `dat/md/fig`) into `docs/dat/md/` so the Material theme can load icons and figures
 - ✅ Conversion script (`scripts/convert_to_mkdocs.py`)
 - ✅ All 164 files converted and organized by year/month
 
@@ -74,7 +75,7 @@ MkDocs has been successfully integrated into the 3dcp.fyi project, converting ~1
 
 ### Asset Path Strategy
 **Decision**: Relative paths to source directory  
-**Implementation**: Paths updated during conversion (`ico/dm/` → `../../dat/md/ico/dm/`)
+**Implementation**: Paths updated during conversion (`ico/dm/` → `../../dat/md/ico/dm/`, `fig/` → `../../dat/md/fig/`) and the conversion step mirrors these asset folders into `docs/dat/md/` for MkDocs to serve
 
 ### Navigation Structure
 **Decision**: Hierarchical organization by year/month with grouping  
@@ -152,9 +153,9 @@ mkdocs gh-deploy
 - Supports relevance ranking and result highlighting
 
 ### Asset Paths
-- Icons: `../../dat/md/ico/dm/` and `../../dat/md/ico/wm/`
-- Figures: `../../dat/md/fig/`
-- Paths are relative from `docs/papers/YYYY/MM.md` to `dat/md/`
+- Icons: `../../../dat/md/ico/dm/` and `../../../dat/md/ico/wm/`
+- Figures: `../../../dat/md/fig/`
+- Paths are relative from `docs/papers/YYYY/MM.md/.` to `docs/dat/md/`
 
 ### HTML Support
 - MkDocs supports HTML in markdown

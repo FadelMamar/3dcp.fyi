@@ -14,6 +14,7 @@ parse_markdown_file = convert_module.parse_markdown_file
 organize_files = convert_module.organize_files
 convert_file = convert_module.convert_file
 convert_to_mkdocs = convert_module.convert_to_mkdocs
+sync_assets = convert_module.sync_assets
 generate_navigation = nav_module.generate_navigation
 generate_nav_yaml = nav_module.generate_nav_yaml
 
@@ -116,6 +117,27 @@ def test_convert_file():
         assert "../../dat/md/fig/test.svg" in content
 
 
+def test_sync_assets():
+    """Ensure asset folders are mirrored into docs directory."""
+    with tempfile.TemporaryDirectory() as tmpdir:
+        project_root = Path(tmpdir)
+        source_dir = project_root / "dat" / "md"
+        docs_dir = project_root / "docs"
+
+        fig_dir = source_dir / "fig"
+        fig_dir.mkdir(parents=True)
+        (fig_dir / "sample.svg").write_text("<svg></svg>")
+
+        ico_dm_dir = source_dir / "ico" / "dm"
+        ico_dm_dir.mkdir(parents=True)
+        (ico_dm_dir / "icon.svg").write_text("<svg></svg>")
+
+        sync_assets(source_dir, docs_dir)
+
+        assert (docs_dir / "dat" / "md" / "fig" / "sample.svg").exists()
+        assert (docs_dir / "dat" / "md" / "ico" / "dm" / "icon.svg").exists()
+
+
 def test_generate_navigation():
     """Test generating navigation structure."""
     files_by_year = {
@@ -177,6 +199,17 @@ def test_convert_to_mkdocs_integration():
         (source_dir / "2024-08.md").write_text("Entry 1\n-----\nEntry 2")
         (source_dir / "2024-09.md").write_text("Entry 3")
         (source_dir / "2023-01.md").write_text("Entry 4")
+
+        # Create asset folders with dummy files
+        fig_dir = source_dir / "fig"
+        fig_dir.mkdir()
+        (fig_dir / "figure.svg").write_text("<svg></svg>")
+
+        ico_dir = source_dir / "ico"
+        (ico_dir / "dm").mkdir(parents=True)
+        (ico_dir / "wm").mkdir(parents=True)
+        (ico_dir / "dm" / "icon.svg").write_text("<svg></svg>")
+        (ico_dir / "wm" / "icon.svg").write_text("<svg></svg>")
         
         # Run conversion
         total_files, total_entries, files_by_year = convert_to_mkdocs(project_root)
@@ -192,6 +225,12 @@ def test_convert_to_mkdocs_integration():
         assert (target_base / "2024" / "08.md").exists()
         assert (target_base / "2024" / "09.md").exists()
         assert (target_base / "2023" / "01.md").exists()
+
+        # Asset folders should be copied
+        assets_base = project_root / "docs" / "dat" / "md"
+        assert (assets_base / "fig" / "figure.svg").exists()
+        assert (assets_base / "ico" / "dm" / "icon.svg").exists()
+        assert (assets_base / "ico" / "wm" / "icon.svg").exists()
 
 
 if __name__ == "__main__":

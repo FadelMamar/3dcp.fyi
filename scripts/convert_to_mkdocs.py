@@ -33,16 +33,16 @@ def main():
         print(f"  Total entries: {total_entries}")
         
         # Generate navigation structure
-        nav = generate_navigation(files_by_year)
+        #nav = generate_navigation(files_by_year)
         
         # Save navigation to a file for mkdocs.yml
-        nav_file = project_root / 'navigation_structure.txt'
-        with open(nav_file, 'w', encoding='utf-8') as f:
-            import json
-            f.write(json.dumps(nav, indent=2))
+        #nav_file = project_root / 'navigation_structure.txt'
+        #with open(nav_file, 'w', encoding='utf-8') as f:
+        #    import json
+        #    f.write(json.dumps(nav, indent=2))
         
-        print(f"\nNavigation structure saved to: {nav_file}")
-        print("Note: You'll need to manually integrate this into mkdocs.yml")
+        #print(f"\nNavigation structure saved to: {nav_file}")
+        #print("Note: You'll need to manually integrate this into mkdocs.yml")
         
     except Exception as e:
         print(f"Error: {e}", file=sys.stderr)
