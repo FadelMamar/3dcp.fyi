@@ -4,6 +4,9 @@ from pathlib import Path
 from typing import Dict, List, Tuple, Any, Optional
 
 
+OVERVIEW_PAGE = 'overview/readme-overview.md'
+
+
 def generate_navigation(files_by_year: Dict[int, List[Tuple[int, int, Path]]]) -> List[Dict[str, Any]]:
     """
     Generate navigation structure for mkdocs.yml.
@@ -15,6 +18,7 @@ def generate_navigation(files_by_year: Dict[int, List[Tuple[int, int, Path]]]) -
     """
     nav = [
         {'Home': 'index.md'},
+        {'Overview': OVERVIEW_PAGE},
         {'Papers': []}
     ]
     
@@ -34,7 +38,7 @@ def generate_navigation(files_by_year: Dict[int, List[Tuple[int, int, Path]]]) -
         
         papers_nav.append({str(year): year_items})
     
-    nav[1]['Papers'] = papers_nav
+    nav[2]['Papers'] = papers_nav
     
     return nav
 
@@ -90,6 +94,7 @@ def generate_nav_structure(docs_dir: Path, generate_index: bool = False, docs_ba
     """
     nav = [
         {'Home': 'index.md'},
+        {'Overview': OVERVIEW_PAGE},
         {'Papers': []}
     ]
     
@@ -160,7 +165,7 @@ def generate_nav_structure(docs_dir: Path, generate_index: bool = False, docs_ba
     if older_years:
         papers_nav.append({'Older Years': older_years})
     
-    nav[1]['Papers'] = papers_nav
+    nav[2]['Papers'] = papers_nav
     
     return nav
 
@@ -177,7 +182,7 @@ def generate_nav_yaml(docs_dir: Path) -> str:
     
     Returns: YAML string for navigation
     """
-    nav_lines = ['- Home: index.md']
+    nav_lines = ['- Home: index.md', f'- Overview: {OVERVIEW_PAGE}']
     papers_nav = ['- Papers:']
     
     # Find all year directories, sorted reverse (most recent first)

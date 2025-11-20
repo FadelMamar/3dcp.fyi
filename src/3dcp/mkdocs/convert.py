@@ -4,7 +4,7 @@ import re
 import shutil
 from pathlib import Path
 from collections import defaultdict
-from typing import List, Dict, Tuple
+from typing import List, Dict, Tuple, Optional
 
 
 def parse_year_month(filename: str) -> Tuple[int, int]:
@@ -117,6 +117,63 @@ def convert_file(source_file: Path, target_file: Path) -> int:
     return len(entries)
 
 
+def _extract_overview_block(readme_content: str) -> Optional[str]:
+    """
+    Extract the overview section (table) from README content.
+    """
+    match = re.search(r'## Overview\s*(.*?)\n## ', readme_content, re.DOTALL)
+    if not match:
+        return None
+    return match.group(1).strip()
+
+
+def _rewrite_table_links(block: str) -> str:
+    """
+    Rewrite README table links from dat/md paths to MkDocs papers paths.
+    """
+    def _repl(match: re.Match) -> str:
+        year = match.group(1)
+        month = match.group(2)
+        return f"(../../papers/{year}/{month}.md)"
+
+    rewritten = re.sub(r'\(dat/md/(\d{4})-(\d{2})\.md\)', _repl, block)
+    rewritten = rewritten.replace('<div align="center">', '<div align="center" markdown>')
+    return rewritten
+
+
+def create_readme_overview_page(project_root: Path) -> Optional[Path]:
+    """
+    Generate docs/overview/readme-overview.md from README.md overview section.
+    """
+    readme_path = project_root / 'README.md'
+    if not readme_path.exists():
+        print(f"README not found at {readme_path}, skipping overview page generation.")
+        return None
+
+    content = readme_path.read_text(encoding='utf-8')
+    overview_block = _extract_overview_block(content)
+    if not overview_block:
+        print("Overview section not found in README, skipping overview page generation.")
+        return None
+
+    overview_block = _rewrite_table_links(overview_block)
+
+    target_dir = project_root / 'docs' / 'overview'
+    target_dir.mkdir(parents=True, exist_ok=True)
+    target_path = target_dir / 'readme-overview.md'
+
+    header_lines = [
+        "# Overview",
+        #"_Auto-generated from README.md. Run `uv run python scripts/convert_to_mkdocs.py` to refresh._",
+        "",
+        overview_block,
+        ""
+    ]
+    target_path.write_text('\n'.join(header_lines), encoding='utf-8')
+    print(f"Overview page written to {target_path.relative_to(project_root)}")
+    return target_path
+
+
 def convert_to_mkdocs(project_root: Path) -> Tuple[int, int, Dict[int, List[Tuple[int, int, Path]]]]:
     """
     Convert markdown files from dat/md/ to MkDocs structure.
@@ -158,6 +215,9 @@ def convert_to_mkdocs(project_root: Path) -> Tuple[int, int, Dict[int, List[Tupl
     # Ensure shared assets (icons, figures) are copied for MkDocs to serve
     docs_dir = project_root / 'docs'
     sync_assets(source_dir, docs_dir)
+
+    # Ensure README overview page is generated for MkDocs navigation.
+    create_readme_overview_page(project_root)
 
     return total_files, total_entries, files_by_year
 
