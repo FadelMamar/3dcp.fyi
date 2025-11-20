@@ -6,6 +6,26 @@ from pathlib import Path
 from collections import defaultdict
 from typing import List, Dict, Tuple, Optional
 
+OVERVIEW_TABLE_STYLE = """
+<style>
+.overview-table {
+  width: auto;
+  margin: 0 auto;
+  border-collapse: collapse;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  overflow: hidden;
+}
+.overview-table th,
+.overview-table td {
+  padding: 0.3rem 0.55rem;
+  font-size: 0.95rem;
+  white-space: nowrap;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+</style>
+""".strip()
+
 
 def parse_year_month(filename: str) -> Tuple[int, int]:
     """Extract year and month from filename like '2024-08.md'."""
@@ -129,16 +149,71 @@ def _extract_overview_block(readme_content: str) -> Optional[str]:
 
 def _rewrite_table_links(block: str) -> str:
     """
-    Rewrite README table links from dat/md paths to MkDocs papers paths.
+    Rewrite README markdown links into HTML anchors pointing to MkDocs pages.
     """
-    def _repl(match: re.Match) -> str:
-        year = match.group(1)
-        month = match.group(2)
-        return f"(../../papers/{year}/{month}.md)"
 
-    rewritten = re.sub(r'\(dat/md/(\d{4})-(\d{2})\.md\)', _repl, block)
+    def _repl(match: re.Match) -> str:
+        label = match.group(1)
+        year = match.group(2)
+        month = match.group(3)
+        return f'<a href="/papers/{year}/{month}/">{label}</a>'
+
+    rewritten = re.sub(r'\[(\d+)\]\(dat/md/(\d{4})-(\d{2})\.md\)', _repl, block)
     rewritten = rewritten.replace('<div align="center">', '<div align="center" markdown>')
     return rewritten
+
+
+def _render_table_html(table_lines: List[str]) -> str:
+    """
+    Convert a markdown table (as list of lines) into HTML table markup.
+    """
+    if len(table_lines) < 2:
+        return '\n'.join(table_lines)
+
+    # First line headers, second line alignment markers (skip)
+    header_cells = [cell.strip() for cell in table_lines[0].strip('|').split('|')]
+    body_lines = table_lines[2:] if len(table_lines) > 2 else []
+
+    html_lines = [
+        '<table class="overview-table">',
+        '  <thead>',
+        '    <tr>' + ''.join(f'<th>{cell or "&nbsp;"}</th>' for cell in header_cells) + '</tr>',
+        '  </thead>',
+        '  <tbody>'
+    ]
+
+    for line in body_lines:
+        cells = [cell.strip() for cell in line.strip('|').split('|')]
+        html_lines.append('    <tr>' + ''.join(f'<td>{cell or "&nbsp;"}</td>' for cell in cells) + '</tr>')
+
+    html_lines.append('  </tbody>')
+    html_lines.append('</table>')
+    return '\n'.join(html_lines)
+
+
+def _convert_tables_to_html(block: str) -> str:
+    """
+    Locate markdown tables inside the block and convert them to HTML tables.
+    """
+    lines = block.splitlines()
+    html_segments: List[str] = []
+    table_buffer: List[str] = []
+
+    def flush_table():
+        if table_buffer:
+            html_segments.append(_render_table_html(table_buffer))
+            table_buffer.clear()
+
+    for line in lines:
+        stripped = line.strip()
+        if stripped.startswith('|'):
+            table_buffer.append(stripped)
+        else:
+            flush_table()
+            html_segments.append(line)
+
+    flush_table()
+    return '\n'.join(html_segments)
 
 
 def create_readme_overview_page(project_root: Path) -> Optional[Path]:
@@ -157,6 +232,8 @@ def create_readme_overview_page(project_root: Path) -> Optional[Path]:
         return None
 
     overview_block = _rewrite_table_links(overview_block)
+    overview_block = _convert_tables_to_html(overview_block)
+    overview_block = f"{OVERVIEW_TABLE_STYLE}\n\n{overview_block}"
 
     target_dir = project_root / 'docs' / 'overview'
     target_dir.mkdir(parents=True, exist_ok=True)

@@ -26,7 +26,7 @@ theme:
   - search.share
   - content.code.copy
 plugins:
-- search
+  - search
 nav:
 - Home: index.md
 - Overview: overview/readme-overview.md
