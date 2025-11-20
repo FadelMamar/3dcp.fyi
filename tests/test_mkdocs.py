@@ -44,14 +44,14 @@ def test_update_asset_paths():
     content = 'src="ico/dm/test.svg" srcset="ico/wm/test.svg" src="fig/test.svg"'
     updated = update_asset_paths(content)
     
-    assert '../../dat/md/ico/dm/test.svg' in updated
-    assert '../../dat/md/ico/wm/test.svg' in updated
-    assert '../../dat/md/fig/test.svg' in updated
+    assert '../../../ico/dm/test.svg' in updated
+    assert '../../../ico/wm/test.svg' in updated
+    assert '../../../fig/test.svg' in updated
     
     # Test with Windows-style paths
     content_win = 'src="fig\\test.svg"'
     updated_win = update_asset_paths(content_win)
-    assert '../../dat/md/fig/test.svg' in updated_win
+    assert '../../../fig/test.svg' in updated_win
 
 
 def test_parse_markdown_file():
@@ -113,8 +113,8 @@ def test_convert_file():
         content = target_file.read_text(encoding='utf-8')
         assert "Entry 1" in content
         assert "Entry 2" in content
-        assert "../../dat/md/ico/dm/test.svg" in content
-        assert "../../dat/md/fig/test.svg" in content
+    assert "../../../ico/dm/test.svg" in content
+    assert "../../../fig/test.svg" in content
 
 
 def test_sync_assets():
@@ -134,8 +134,8 @@ def test_sync_assets():
 
         sync_assets(source_dir, docs_dir)
 
-        assert (docs_dir / "dat" / "md" / "fig" / "sample.svg").exists()
-        assert (docs_dir / "dat" / "md" / "ico" / "dm" / "icon.svg").exists()
+        assert (docs_dir / "fig" / "sample.svg").exists()
+        assert (docs_dir / "ico" / "dm" / "icon.svg").exists()
 
 
 def test_generate_navigation():
@@ -147,11 +147,13 @@ def test_generate_navigation():
     
     nav = generate_navigation(files_by_year)
     
-    assert len(nav) == 2
+    assert len(nav) == 3
     assert 'Home' in nav[0]
-    assert 'Papers' in nav[1]
+    assert 'Overview' in nav[1]
+    assert nav[1]['Overview'] == 'overview/readme-overview.md'
+    assert 'Papers' in nav[2]
     
-    papers_nav = nav[1]['Papers']
+    papers_nav = nav[2]['Papers']
     assert len(papers_nav) == 2  # Two years
     
     # Check that years are sorted reverse (most recent first)
@@ -179,6 +181,7 @@ def test_generate_nav_yaml():
         
         assert "Home: index.md" in yaml_output
         assert "Papers:" in yaml_output
+        assert "Overview: overview/readme-overview.md" in yaml_output
         assert "2024" in yaml_output
         assert "2023" in yaml_output
         assert "2024-08" in yaml_output
@@ -227,7 +230,7 @@ def test_convert_to_mkdocs_integration():
         assert (target_base / "2023" / "01.md").exists()
 
         # Asset folders should be copied
-        assets_base = project_root / "docs" / "dat" / "md"
+        assets_base = project_root / "docs"
         assert (assets_base / "fig" / "figure.svg").exists()
         assert (assets_base / "ico" / "dm" / "icon.svg").exists()
         assert (assets_base / "ico" / "wm" / "icon.svg").exists()
