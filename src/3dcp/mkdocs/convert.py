@@ -20,12 +20,12 @@ def update_asset_paths(content: str) -> str:
     Update asset paths in content to work from MkDocs structure.
     """
     # Update icon paths (both dm and wm)
-    content = re.sub(r'srcset="ico/(dm|wm)/', r'srcset="../../../dat/md/ico/\1/', content)
-    content = re.sub(r'src="ico/(dm|wm)/', r'src="../../../dat/md/ico/\1/', content)
+    content = re.sub(r'srcset="ico/(dm|wm)/', r'srcset="../../../ico/\1/', content)
+    content = re.sub(r'src="ico/(dm|wm)/', r'src="../../../ico/\1/', content)
     
     # Update figure paths
-    content = re.sub(r'src="fig\\', r'src="../../../dat/md/fig/', content)
-    content = re.sub(r'src="fig/', r'src="../../../dat/md/fig/', content)
+    content = re.sub(r'src="fig\\', r'src="../../../fig/', content)
+    content = re.sub(r'src="fig/', r'src="../../../fig/', content)
     
     return content
 
@@ -35,7 +35,7 @@ def sync_assets(source_dir: Path, docs_dir: Path) -> None:
     Ensure that asset folders referenced by the converted markdown files
     are available within the MkDocs docs directory.
     """
-    asset_target_base = docs_dir / 'dat' / 'md'
+    asset_target_base = docs_dir #/ 'dat' / 'md'
     asset_target_base.mkdir(parents=True, exist_ok=True)
 
     for folder in ('fig', 'ico'):
