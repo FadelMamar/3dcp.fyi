@@ -156,7 +156,7 @@ def _rewrite_table_links(block: str) -> str:
         label = match.group(1)
         year = match.group(2)
         month = match.group(3)
-        return f'<a href="/papers/{year}/{month}/">{label}</a>'
+        return f'<a href="../../papers/{year}/{month}/">{label}</a>'
 
     rewritten = re.sub(r'\[(\d+)\]\(dat/md/(\d{4})-(\d{2})\.md\)', _repl, block)
     rewritten = rewritten.replace('<div align="center">', '<div align="center" markdown>')
